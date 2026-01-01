@@ -21,164 +21,205 @@
 ## 📅 Day 2: .NET & C# Basics
 
 - Learned basics of the **.NET Framework** and **C# language**
-- Understood **C# program structure** (`HelloWorld`)
-- Learned **basic elements of programming**:
-  - Variables
-  - Literals
+- Understood **C# program structure**
+- Learned:
+  - Variables, literals
   - Primitive data types
   - Basic input/output
   - Operators
-- Followed **best practices in naming conventions**
-- Practiced writing code using a **text editor**
-- Compiled and executed C# programs using **command-line tools**
-- Solved **10 basic C# programs**
-- Solved **5 LeetCode problems**
+- Followed **naming conventions**
+- Solved **basic C# programs**
+- Practiced command-line compilation
 
 ---
 
 ## 📅 Day 3: C# Basics and Questions
 
 - Learned **C# Comments**
-- Studied **C# Basic Data Types**
-- Understood **C# Variables**
+- Studied **Data Types and Variables**
 - Learned **Arithmetic Operators**
 - Understood **Operator Precedence**
-- Learned **Type Conversion**:
-  - Implicit type conversion
-  - Explicit type conversion
-- Practiced **taking user input** in C# programs
+- Practiced **Type Conversion**
+- Took **user input** using `Console.ReadLine()`
 
 ---
 
 ## 📅 Day 4: Revision & Practice
 
-- Revised **Git & GitHub fundamentals**
-  - Repository handling
-  - Command-line workflow
-- Revised **.NET Framework** and **C# program structure**
-- Revised **basic programming concepts**
-  - Variables and literals
-  - Primitive data types
-  - Operators and operator precedence
-  - Basic input/output
-- Revised **C# fundamentals**
-  - Comments
-  - Variables and data types
-  - Type conversion
-  - User input handling
-- Practiced **revision-based programs and logical problems**
+- Revised:
+  - Git & GitHub workflow
+  - .NET basics
+  - C# fundamentals
+- Practiced logical programs
 
 ---
 
 ## 📅 Day 5: C# Control Flow Statements
 
-- Learned **C# Control Flow concepts**
-- Studied **Boolean data type (`bool`)**
-- Understood **Boolean Expressions**
-- Learned **Logical Operators**
-  - AND (`&&`)
-  - OR (`||`)
-  - NOT (`!`)
-- Implemented **if, else if, and else**
-- Practiced **loops**
-  - `for`
-  - `while`
-- Used **break and continue**
-- Implemented programs using **switch-case**
+- Learned:
+  - Boolean expressions
+  - Logical operators
+- Implemented:
+  - `if-else`
+  - `for`, `while`
+  - `switch-case`
+- Used `break` and `continue`
 
 ---
 
 ## 📅 Day 6: C# Arrays & Multi-Dimensional Arrays
 
-- Learned **C# Arrays** and their importance
-- Created and initialized **single-dimensional arrays**
-- Accessed and modified array elements using loops
-- Used **Length property**
-- Learned **Multi-Dimensional Arrays**
-- Worked with **2D arrays (Matrix)**
-- Determined array sizes programmatically
-- Used **Console.Error.WriteLine()** for error handling
-- Learned **Environment.Exit()** for program termination
+- Learned **single-dimensional arrays**
+- Worked with **2D arrays**
+- Learned **multi-dimensional arrays**
+- Used:
+  - `Length` property
+  - Error handling with `Console.Error`
+  - Program exit using `Environment.Exit()`
 
 ---
 
 ## 📅 Day 7: C# Methods
 
-- Learned **User-Defined Methods**
-- Practiced **method reuse** to avoid duplication
-- Used **parameters and return types**
-- Understood and implemented **Recursive Methods**
-- Learned **Static Methods**
-- Practiced **.NET Standard Library methods**
-- Used **System.Math** class:
-  - `Abs`, `Pow`, `Sqrt`, `Max`, `Min`, `Round`
+- Learned **user-defined methods**
+- Practiced:
+  - Parameters & return types
+  - Method reuse
+  - Recursive methods
+- Used **System.Math** functions
 
 ---
 
 ## 📅 Day 8: C# Strings & Exception Handling
 
-- Learned **C# Strings** and text manipulation
-- Created strings using different approaches
-- Understood **Escape Sequences** (`\\`)
-- Took **string input** from users
-- Worked with **String Arrays**
-- Passed strings as **method parameters**
-- Used **String built-in methods**
-  - `Length`
-  - `ToUpper()`, `ToLower()`
+- Worked with **strings and string arrays**
+- Used string methods:
   - `Substring()`
-  - `Contains()`
   - `Replace()`
-- Learned **ASCII character codes**
-- Studied **Exception Handling**
-- Understood **Exception Hierarchy**
-- Learned common exception types
-  - `FormatException`
-  - `NullReferenceException`
-  - `IndexOutOfRangeException`
-  - `DivideByZeroException`
-- Understood **checked and unchecked exceptions**
+  - `Contains()`
+- Learned **Exception Handling**
+  - Common exception types
+  - Checked vs unchecked exceptions
 
 ---
 
 ## 📅 Day 9: Scenario-Based C# Programs
 
-- Implemented **menu-driven console applications**
-- Programs developed:
-  - **String Analyzer** – Word count, longest word, replace words
-  - **String Formatter** – Remove extra spaces, capitalize sentences
-  - **Student Scores Analyzer** – Average, highest, lowest, above-average scores
-  - **Temperature Analyzer** – Weekly temperature analysis
-- Focused on:
+- Built **menu-driven applications**
+- Programs:
+  - String Analyzer
+  - String Formatter
+  - Student Scores Analyzer
+  - Temperature Analyzer
+- Learned:
   - Arrays
   - Strings
   - Loops
-  - Conditionals
-  - Input validation
-  - Method-based modular programming
-- Learned OOP fundamentals:
-  - **Procedural vs Object-Oriented Programming**
-  - **Class and Object**
+  - OOP basics (Class & Object)
 
 ---
 
 ## 📅 Day 10: Scenario-Based Applications & OOP Concepts
 
-- Developed **scenario-based console applications**
 - **Library Management System**
-  - Used **3D arrays** to store book details
-  - Implemented **partial search** by title and author
-  - Added **admin authentication**
-  - Applied **input validation** and **menu-driven design**
+  - Used **3D arrays**
+  - Partial search by title and author
+  - Admin authentication
 - **EduQuiz Application**
-  - Implemented quiz flow
-  - Answer validation
-  - Score and percentage calculation
-  - Pass/Fail result with feedback
-- Learned and practiced **OOP concepts**
-  - **Constructors**
-  - **Instance vs Class (Static) Variables**
-  - **Access Modifiers** (`public`, `private`, `protected`, `internal`)
-- Focused on **clean code**, **modular design**, and **readability**
+  - Quiz flow
+  - Score calculation
+  - Result evaluation
+- Learned:
+  - Constructors
+  - Static vs Instance variables
+  - Access modifiers
 
 ---
+
+## 📅 Day 11: OOP-Based Scenario Applications & Utility Classes
+
+### 🔹 Banking System (OOP – Real-World Simulation)
+
+- Developed a **menu-driven Banking System**
+- Implemented classes:
+  - `Bank`
+  - `BankManager`
+  - `Client`
+- Features:
+  - Open & close account
+  - Deposit & withdrawal
+  - Balance inquiry
+  - View all accounts (manager only)
+- Applied:
+  - Encapsulation
+  - Admin authentication
+  - IS-A / HAS-A / USES-A relationships
+- Used arrays for data storage
+- Implemented real-world banking rules
+
+---
+
+### 🔹 Invoice Generator for Freelancers
+
+- Built an **Invoice Generator** using strings
+- Input format:
+  - `"Logo Design - 3000 INR, Web Page - 4500 INR"`
+- Implemented:
+  - Invoice parsing
+  - Task extraction
+  - Total amount calculation
+- Used:
+  - `ParseInvoice()`
+  - `GetTotalAmount()`
+
+---
+
+### 🔹 Utility Class – Mathematical Operations
+
+- Implemented reusable static methods:
+  - Factorial
+  - Prime check
+  - GCD
+  - Fibonacci
+- Handled edge cases:
+  - Zero
+  - One
+  - Negative numbers
+- Improved logical thinking and validation
+
+---
+
+## 📅 Day 12: Cafeteria Menu App (Arrays & Methods)
+
+### 🔹 Cafeteria Ordering System
+
+- Developed a **menu-driven Cafeteria application**
+- Scenario:
+  - Campus cafeteria with **10 fixed daily items**
+- Stored menu items and prices using:
+  - **2D string array**
+- Features implemented:
+  - Display cafeteria menu with index numbers
+  - Select items by index
+  - Limit order size
+  - View ordered items with quantity
+  - Generate total bill
+- Implemented methods:
+  - `DisplayMenu()`
+  - `UserChoice()`
+  - `GetItemByIndex()`
+  - `OrderedItems()`
+  - `GenerateBill()`
+  - `CheckOrder()`
+- Focused on:
+  - Array traversal
+  - Method modularization
+  - Input validation
+  - Clean menu-driven flow
+- Strengthened understanding of:
+  - Arrays vs constants
+  - Index-based data access
+  - Real-world ordering logic
+
+---
+
