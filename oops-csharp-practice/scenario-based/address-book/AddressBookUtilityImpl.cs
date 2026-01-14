@@ -12,28 +12,146 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         private Contact[]addressBook=new Contact[100];
 
         //variable to store total contacts count
-        int totalContacts = 0;
+        private int totalContacts = 0;
+
+        //getter for total contact
+        public int TotalContacts
+        {
+            get { return totalContacts; } 
+        }
 
         //implementation of AddNewContact method to add new contact
         public void AddNewContact(Contact contact)
-        {
+        { 
             addressBook[totalContacts] = contact;
             totalContacts++;
+        }
+
+
+        //implementation of EditPersonContact method to edit person contact
+        public void EditPersonContact(string firstName,string lastName)
+        {
+            //if no contact exists
+            if (totalContacts == 0)
+            {
+                Console.WriteLine("\n   NO CONTACT EXISTS");
+                return;
+            }
+
+            //loop through addressBook array
+            for(int i=0;i<totalContacts;i++)
+            {
+                //if first name and last name matches
+                if (addressBook[i].FirstName.ToLower() == firstName.ToLower() && addressBook[i].LastName.ToLower()==lastName.ToLower())
+                {
+                    DisplayChangingOptions(addressBook[i]);
+                    return;
+                }
+            }
+            Console.WriteLine("\nPERSON NOT FOUND");
+        }
+
+        //helper method for displaying changing choices
+        public void DisplayChangingOptions(Contact contact)
+        {
+            //loop until user saves changes
+            while (true)
+            {
+                //display menu
+                Console.WriteLine("\n1. CHANGE FIRST NAME");
+                Console.WriteLine("2. CHANGE LAST NAME");
+                Console.WriteLine("3. CHANGE EMAIL");
+                Console.WriteLine("4. CHANGE ADDRESS");
+                Console.WriteLine("5. CHANGE CITY");
+                Console.WriteLine("6. CHANGE STATE");
+                Console.WriteLine("7. CHANGE PHONE NUMBER");
+                Console.WriteLine("8. SAVE CHANGES");
+                Console.Write("ENTER YOUR CHOICE: ");
+
+                //take user's choice
+                int choice = Convert.ToInt32(Console.ReadLine());
+
+                //handle user's choice
+                switch(choice)
+                {
+                    //change first name
+                    case 1:
+                        Console.Write("ENTER NEW FIRST NAME:");
+                        contact.FirstName = Console.ReadLine();
+                        Console.WriteLine("CHANGES DONE");
+                        break;
+
+                    //change last name
+                    case 2:
+                        Console.Write("ENTER NEW LAST NAME:");
+                        contact.LastName = Console.ReadLine();
+                        Console.WriteLine("CHANGES DONE");
+                        break;
+
+                    //change email
+                    case 3:
+                        Console.Write("ENTER NEW EMAIL:");
+                        contact.Email = Console.ReadLine();
+                        Console.WriteLine("CHANGES DONE");
+                        break;
+
+                    //change address
+                    case 4:
+                        Console.Write("ENTER NEW ADDRESS:");
+                        contact.Address = Console.ReadLine();
+                        Console.WriteLine("CHANGES DONE");
+                        break;
+
+                    //change city
+                    case 5:
+                        Console.Write("ENTER NEW CITY:");
+                        contact.City = Console.ReadLine();
+                        Console.WriteLine("CHANGES DONE");
+                        break;
+
+                    //change state
+                    case 6:
+                        Console.Write("ENTER NEW STATE:");
+                        contact.State = Console.ReadLine();
+                        Console.WriteLine("CHANGES DONE");
+                        break;
+
+                    //change phone number
+                    case 7:
+                        Console.Write("ENTER NEW PHONE NUMBER:");
+                        contact.PhoneNumber = Console.ReadLine();
+                        Console.WriteLine("CHANGES DONE");
+                        break;
+
+                    //save changes
+                    case 8:
+                        Console.WriteLine("\nCHANGES SAVED SUCCESSFULLY");
+                        return;
+
+                    default:
+                        Console.WriteLine("\nINVALID CHOICE");
+                        break;
+                }
+
+            }
         }
 
         //method to display all contacts
         public void DisplayContacts()
         {
+            //if no contact exists
             if(totalContacts == 0)
             {
                 Console.Write("NO CONTACT ADDED YET");
                 return;
             }
 
+            //loop through addressBook array
             for(int i=0; i<totalContacts; i++)
             {
                 Console.WriteLine(addressBook[i]);
             }
         }
+
     }
 }
