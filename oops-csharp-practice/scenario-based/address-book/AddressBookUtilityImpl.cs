@@ -31,13 +31,6 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         //implementation of EditPersonContact method to edit person contact
         public void EditPersonContact(string firstName,string lastName)
         {
-            //if no contact exists
-            if (totalContacts == 0)
-            {
-                Console.WriteLine("\n   NO CONTACT EXISTS");
-                return;
-            }
-
             //loop through addressBook array
             for(int i=0;i<totalContacts;i++)
             {
@@ -76,49 +69,49 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                 {
                     //change first name
                     case 1:
-                        Console.Write("ENTER NEW FIRST NAME:");
+                        Console.Write("\nENTER NEW FIRST NAME:");
                         contact.FirstName = Console.ReadLine();
                         Console.WriteLine("CHANGES DONE");
                         break;
 
                     //change last name
                     case 2:
-                        Console.Write("ENTER NEW LAST NAME:");
+                        Console.Write("\nENTER NEW LAST NAME:");
                         contact.LastName = Console.ReadLine();
                         Console.WriteLine("CHANGES DONE");
                         break;
 
                     //change email
                     case 3:
-                        Console.Write("ENTER NEW EMAIL:");
+                        Console.Write("\nENTER NEW EMAIL:");
                         contact.Email = Console.ReadLine();
                         Console.WriteLine("CHANGES DONE");
                         break;
 
                     //change address
                     case 4:
-                        Console.Write("ENTER NEW ADDRESS:");
+                        Console.Write("\nENTER NEW ADDRESS:");
                         contact.Address = Console.ReadLine();
                         Console.WriteLine("CHANGES DONE");
                         break;
 
                     //change city
                     case 5:
-                        Console.Write("ENTER NEW CITY:");
+                        Console.Write("\nENTER NEW CITY:");
                         contact.City = Console.ReadLine();
                         Console.WriteLine("CHANGES DONE");
                         break;
 
                     //change state
                     case 6:
-                        Console.Write("ENTER NEW STATE:");
+                        Console.Write("\nENTER NEW STATE:");
                         contact.State = Console.ReadLine();
                         Console.WriteLine("CHANGES DONE");
                         break;
 
                     //change phone number
                     case 7:
-                        Console.Write("ENTER NEW PHONE NUMBER:");
+                        Console.Write("\nENTER NEW PHONE NUMBER:");
                         contact.PhoneNumber = Console.ReadLine();
                         Console.WriteLine("CHANGES DONE");
                         break;
@@ -136,13 +129,41 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             }
         }
 
+
+        //method to delete person contact by name
+        public void DeletePersonContact(string firstName, string lastName)
+        {
+            //loop through addressBook array
+            for(int i = 0; i < totalContacts; i++)
+            {
+                //if first name and last name matches
+                if (addressBook[i].FirstName.ToLower() == firstName.ToLower() && addressBook[i].LastName.ToLower() == lastName.ToLower())
+                {
+                   
+                    //shift elements
+                    for (int j = i; j < totalContacts - 1; j++)
+                    {
+                        addressBook[j] = addressBook[j + 1];
+                    }
+
+                    //make address book null
+                    addressBook[totalContacts-1] = null;
+                    Console.WriteLine("\nCONTACT DELETED SUCCESSFULLY");
+                    totalContacts--;
+                    return;
+                }
+            }
+
+            Console.WriteLine("\nPERSON CONTACT NOT FOUND");
+        }
+
         //method to display all contacts
         public void DisplayContacts()
         {
             //if no contact exists
             if(totalContacts == 0)
             {
-                Console.Write("NO CONTACT ADDED YET");
+                Console.WriteLine("\nNO CONTACT EXISTS");
                 return;
             }
 
