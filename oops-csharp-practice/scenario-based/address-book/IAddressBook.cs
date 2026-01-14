@@ -11,5 +11,8 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         //method to add new contact
         void AddNewContact(Contact contact);
 
+        //method to edit person contact
+        void EditPersonContact(string firstName,string lastName);
+
     }
 }
