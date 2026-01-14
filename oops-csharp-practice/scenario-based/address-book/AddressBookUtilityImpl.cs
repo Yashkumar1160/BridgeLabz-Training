@@ -157,6 +157,58 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             Console.WriteLine("\nPERSON CONTACT NOT FOUND");
         }
 
+
+        //method to add multiple contacts
+        public void AddMultipleContacts(int numberOfContacts)
+        {
+            Contact[]newContacts= new Contact[numberOfContacts];
+
+            for(int i = 0; i < numberOfContacts; i++)
+            {
+                Console.WriteLine($"ENTER DETAILS OF PERSON {i + 1}: ");
+
+                //take first name
+                Console.Write("\nENTER FIRST NAME: ");
+                string firstName = Console.ReadLine();
+
+                //take last name
+                Console.Write("ENTER LAST NAME: ");
+                string lastName = Console.ReadLine();
+
+                //take email
+                Console.Write("ENTER EMAIL: ");
+                string email = Console.ReadLine();
+
+                //take city
+                Console.Write("ENTER CITY: ");
+                string city = Console.ReadLine();
+
+                //take state
+                Console.Write("ENTER STATE: ");
+                string state = Console.ReadLine();
+
+                //take zip code
+                Console.Write("ENTER ZIP CODE: ");
+                string zip = Console.ReadLine();
+
+                //take phone number
+                Console.Write("ENTER PHONE NUMBER: ");
+                string phoneNumber = Console.ReadLine();
+
+                //take address
+                Console.Write("ENTER ADDRESS: ");
+                string address = Console.ReadLine();
+
+                //create object
+                Contact contact = new Contact(firstName, lastName, address, city, state, zip, email, phoneNumber);
+
+                //add contact
+                addressBook[totalContacts]= contact;
+                totalContacts++;
+
+            }
+        }
+
         //method to display all contacts
         public void DisplayContacts()
         {
@@ -171,6 +223,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             for(int i=0; i<totalContacts; i++)
             {
                 Console.WriteLine(addressBook[i]);
+                Console.WriteLine("\n-------------------------------------------");
             }
         }
 
