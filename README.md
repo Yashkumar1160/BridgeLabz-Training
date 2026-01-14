@@ -11,7 +11,6 @@
 * Installed and configured Git
 * Created GitHub repository
 * Learned basic Git commands:
-
   * `git add`
   * `git commit`
   * `git push`
@@ -24,7 +23,6 @@
 * Learned basics of the **.NET Framework** and **C# language**
 * Understood **C# program structure**
 * Learned:
-
   * Variables, literals
   * Primitive data types
   * Basic input/output
@@ -49,7 +47,6 @@
 ## 📅 Day 4: Revision & Practice
 
 * Revised:
-
   * Git & GitHub workflow
   * .NET basics
   * C# fundamentals
@@ -60,11 +57,9 @@
 ## 📅 Day 5: C# Control Flow Statements
 
 * Learned:
-
   * Boolean expressions
   * Logical operators
 * Implemented:
-
   * `if-else`
   * `for`, `while`
   * `switch-case`
@@ -78,7 +73,6 @@
 * Worked with **2D arrays**
 * Learned **multi-dimensional arrays**
 * Used:
-
   * `Length` property
   * Error handling with `Console.Error`
   * Program exit using `Environment.Exit()`
@@ -89,7 +83,6 @@
 
 * Learned **user-defined methods**
 * Practiced:
-
   * Parameters & return types
   * Method reuse
   * Recursive methods
@@ -101,14 +94,31 @@
 
 * Worked with **strings and string arrays**
 * Used string methods:
-
   * `Substring()`
   * `Replace()`
   * `Contains()`
-* Learned **Exception Handling**:
-
+    
+* Learned **Basic Exception Handling**:
   * Common exception types
   * Checked vs unchecked exceptions
+    
+* Learned **Common Built-in functions and DateTime Built-in functions**:
+  * `Random.Next()`
+  * `Random.NextDouble()`
+  * `Math.Pow()`
+  * `Math.Abs()`
+  * `DateTime.Now()`
+  * `DateTime.ParseExact()`
+
+* **Scenario Based Snake And Ladder Game**:
+  * Methods :
+    * `RollDice()`
+    * `MovePlayer`
+    * `ApplySnakeOrLadder()`
+    * `CheckWin()`
+  * Multi-Player Rules
+  * Using Different Operators
+  * Using Control Flows Statements
 
 ---
 
@@ -116,16 +126,14 @@
 
 * Built **menu-driven applications**
 * Programs:
-
   * String Analyzer
   * String Formatter
   * Student Scores Analyzer
   * Temperature Analyzer
+   
 * Learned:
-
-  * Arrays
-  * Strings
-  * Loops
+  * Object Oriented Programming
+  * Procedural Programming
   * OOP basics (Class & Object)
 
 ---
@@ -133,17 +141,16 @@
 ## 📅 Day 10: Scenario-Based Applications & OOP Concepts
 
 * **Library Management System**:
-
   * Used **3D arrays**
   * Partial search by title and author
   * Admin authentication
+    
 * **EduQuiz Application**:
-
   * Quiz flow
   * Score calculation
   * Result evaluation
+   
 * Learned:
-
   * Constructors
   * Static vs Instance variables
   * Access modifiers
@@ -155,56 +162,66 @@
 ### 🔹 Banking System (OOP – Real-World Simulation)
 
 * Developed a **menu-driven Banking System**
+ 
 * Implemented classes:
-
   * `Bank`
   * `BankManager`
   * `Client`
-* Features:
 
+* Features:
   * Open & close account
   * Deposit & withdrawal
   * Balance inquiry
   * View all accounts (manager only)
-* Applied:
 
+* Applied:
   * Encapsulation
   * Admin authentication
   * IS-A / HAS-A / USES-A relationships
 * Used arrays for data storage
 
-### 🔹 Invoice Generator for Freelancers
 
+### 🔹 Invoice Generator for Freelancers
 * Built an **Invoice Generator** using strings
 * Parsed tasks and calculated total bill amount
 
+
 ### 🔹 Utility Class – Mathematical Operations
-
 * Implemented reusable static methods:
-
   * Factorial
   * Prime check
   * GCD
   * Fibonacci
+    
 * Handled edge cases and validations
+
+* **LEARNED:**
+   * this, sealed and static keyword
+   * using is operator
 
 ---
 
 ## 📅 Day 12: Cafeteria Menu App (Arrays & Methods)
 
 * Developed a **menu-driven Cafeteria Ordering System**
-* Used **2D arrays** to store menu items and prices
-* Features:
 
+* Used **2D arrays** to store menu items and prices
+
+* Features:
   * Item selection by index
   * Quantity handling
   * Bill generation
   * Order validation
+
 * Focused on modular methods and clean flow
+
+*Learned about object and class diagrams
 
 ---
 
 ## 📅 Day 13: Inheritance & Loop-Based Scenarios
+
+* **Learned About Inheritance and worked on scenario based problems**
 
 ### 🚌 Bus Route Distance Tracker
 
@@ -235,26 +252,24 @@
 ### 🏥 Hospital Patient Management System
 
 * Classes:
-
   * `Patient`, `Doctor`, `Bill`
+    
 * Inheritance:
-
   * `InPatient`, `OutPatient` → `Patient`
+    
 * Interface:
-
   * `IPayable`
+    
 * Applied:
-
   * Encapsulation using properties
   * Polymorphic `DisplayInfo()`
 
 ### 🚗 Vehicle Rental Application
 
 * Classes:
-
   * `Vehicle`, `Bike`, `Car`, `Truck`, `Customer`
+    
 * Used:
-
   * `protected` fields
   * Interface `IRentable`
 * Implemented rent calculation using polymorphism
@@ -266,28 +281,29 @@
 ### 🐦 Bird Sanctuary System (EcoWing)
 
 * Base class: `Bird`
+  
 * Interfaces:
-
   * `IFlyable`
   * `ISwimmable`
+    
 * Derived classes:
-
   * Eagle, Sparrow (Fly)
   * Duck, Penguin (Swim)
   * Seagull (Fly + Swim)
+    
 * Used arrays to store birds
+
 * Applied runtime polymorphism using interface checks
 
 ### 📞 Customer Service Call Log Manager
-
 * Stored call logs in an **array**
+  
 * Each log includes:
-
   * PhoneNumber
   * Message
   * Timestamp
+   
 * Features:
-
   * Add call log
   * Search by keyword (`string.Contains`)
   * Filter by time range
@@ -301,7 +317,6 @@
 * Introduced **Linked List** concepts
 * Designed employee wage calculation logic
 * Focused on:
-
   * Dynamic data storage
   * Sequential access
 
@@ -312,13 +327,10 @@
 ### 🏠 Smart Home Automation System
 
 * Classes:
-
   * `Appliance`, `Light`, `Fan`, `AC`
 * Interface:
-
   * `IControllable` (TurnOn, TurnOff)
 * Used:
-
   * Stack / Queue concepts
   * Polymorphism for device-specific behavior
 
@@ -329,13 +341,10 @@
 ### 🏃 FitTrack – Fitness Tracker
 
 * Classes:
-
   * `UserProfile`, `Workout`
 * Interface:
-
   * `ITrackable`
 * Types:
-
   * `CardioWorkout`
   * `StrengthWorkout`
 * Implemented workout tracking with polymorphism
@@ -361,17 +370,17 @@
 
 ---
 
-## ✅ Day 19: Strings, Searching & Optimization
-- `StringBuilder` vs `StringBuffer`
+## ✅ Day 19: Strings, Searching & Scenario Based Problems
+- StringBuilder
 - Linear Search
 - Binary Search
 
-### Optimization Problems
+### Scenario Based Problems
 - Metal Factory Pipe Cutting
 - Custom Furniture Manufacturing
 
 ### Major Design Case
-- **LoanBuddy – Loan Approval Automation (Java)**
+- **LoanBuddy – Loan Approval Automation **
   - Encapsulation of approval logic
   - Inheritance for loan types
   - Polymorphic EMI calculation
@@ -391,12 +400,14 @@
 - Practical C# performance optimization guidelines
 
 ### Collection-Based Applications
+
 - **CinemaTime – Movie Schedule Manager**
-  - Lists for titles and showtimes
+  - Array for titles and showtimes
   - Search using `String.contains`
   - Exception handling
+
 - **BookBuddy – Digital Bookshelf App**
-  - ArrayList usage
+  - Array usage to store book details
   - Sorting and searching
   - String parsing using `split()`
   - Custom exception handling
