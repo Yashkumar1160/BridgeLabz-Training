@@ -19,10 +19,11 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             while (true)
             {
                 Console.WriteLine("\n1. ADD NEW CONTACT");
-                Console.WriteLine("2. EDIT PERSON CONTACT");
-                Console.WriteLine("3. DISPLAY CONTACTS");
-                Console.WriteLine("4. DELETE PERSON CONTACT");
-                Console.WriteLine("5. EXIT PROGRAM");
+                Console.WriteLine("2. ADD MULTIPLE CONTACTS");
+                Console.WriteLine("3. EDIT PERSON CONTACT");
+                Console.WriteLine("4. DISPLAY CONTACTS");
+                Console.WriteLine("5. DELETE PERSON CONTACT");
+                Console.WriteLine("6. EXIT PROGRAM");
                 Console.Write("ENTER YOUR CHOICE: ");
 
                 //take user's choice
@@ -82,8 +83,27 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                         break;
 
 
-                    //edit person contact
+                    //add multiple contacts
                     case 2:
+                        //if address book is full
+                        if (utility.TotalContacts == 99)
+                        {
+                            Console.WriteLine("ADDRESS BOOK IS FULL");
+                            return;
+                        }
+
+                        //take number of persons
+                        Console.WriteLine("ENTER NUMBER OF PERSONS: ");
+                        int n=Convert.ToInt32(Console.ReadLine());
+
+                        //call AddMultipleContacts method
+                        utility.AddMultipleContacts(n);
+                        Console.WriteLine("\nCONTACTS ADDED SUCCESSFULLY");
+                        break;
+
+
+                    //edit person contact
+                    case 3:
                         //if no contact exists
                         if (utility.TotalContacts == 0)
                         {
@@ -105,12 +125,12 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
 
 
                     //display contacts
-                    case 3:
+                    case 4:
                         utility.DisplayContacts();
                         break;
 
                     //delete person contact
-                    case 4:
+                    case 5:
                         if (utility.TotalContacts == 0)
                         {
                             Console.WriteLine("\nNO CONTACT EXISTS");
@@ -130,7 +150,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                         break;
 
                     //exit program
-                    case 5:
+                    case 6:
                         Console.WriteLine("\nEXIT SUCCESSFUL");
                         return;
 
