@@ -1,249 +1,363 @@
-# 📘 BridgeLabz Training – Daily Learning Log (C# & Java)
+# 📘 BridgeLabz Training – Daily Learning Log
 
-## 👤 Trainee Details
-- **Name:** Yash Kumar  
-- **Program:** BridgeLabz Fellowship Training  
-- **Primary Focus:**  
-  - C# & .NET  
-  - Java Backend Development  
-  - Object-Oriented Programming (OOP)  
-  - Data Structures & Algorithms  
-  - Scenario-Based Application Development  
+## 👤 Trainee
+
+**Name:** Yash Kumar
 
 ---
 
-## 🎯 Training Objective
-To build strong programming fundamentals and industry-ready problem-solving skills through structured daily learning, hands-on coding, and real-world scenario-based applications using **C# and Java**.
+## 📅 Day 1: Git & GitHub
+
+* Installed and configured Git
+* Created GitHub repository
+* Learned basic Git commands:
+
+  * `git add`
+  * `git commit`
+  * `git push`
+* Successfully pushed code to GitHub using command line
 
 ---
 
-## 🛠️ Technologies & Tools
-- **Languages:** C#, Java  
-- **Framework:** .NET  
-- **Tools:** Git, GitHub, VS Code  
-- **Concepts:** OOP, DSA, Exception Handling, Algorithms  
+## 📅 Day 2: .NET & C# Basics
+
+* Learned basics of the **.NET Framework** and **C# language**
+* Understood **C# program structure**
+* Learned:
+
+  * Variables, literals
+  * Primitive data types
+  * Basic input/output
+  * Operators
+* Followed **naming conventions**
+* Solved **basic C# programs**
+* Practiced command-line compilation
 
 ---
 
-## 📅 Daily Learning Progress
+## 📅 Day 3: C# Basics and Questions
+
+* Learned **C# Comments**
+* Studied **Data Types and Variables**
+* Learned **Arithmetic Operators**
+* Understood **Operator Precedence**
+* Practiced **Type Conversion**
+* Took **user input** using `Console.ReadLine()`
 
 ---
 
-## ✅ Day 1: Git & GitHub
-- Installed and configured Git
-- Created GitHub repository
-- Learned Git commands:
-  - `git add`
-  - `git commit`
-  - `git push`
-- Successfully pushed code using command line
+## 📅 Day 4: Revision & Practice
+
+* Revised:
+
+  * Git & GitHub workflow
+  * .NET basics
+  * C# fundamentals
+* Practiced logical programs
 
 ---
 
-## ✅ Day 2: .NET & C# Basics
-- Overview of .NET framework
-- C# program structure
-- Variables, literals, and data types
-- Operators and naming conventions
-- Basic input/output
-- Solved beginner-level C# programs
-- Command-line compilation
+## 📅 Day 5: C# Control Flow Statements
+
+* Learned:
+
+  * Boolean expressions
+  * Logical operators
+* Implemented:
+
+  * `if-else`
+  * `for`, `while`
+  * `switch-case`
+* Used `break` and `continue`
 
 ---
 
-## ✅ Day 3: C# Basics & Input Handling
-- Comments in C#
-- Data types and variables
-- Arithmetic operators
-- Operator precedence
-- Type conversion
-- User input using `Console.ReadLine()`
+## 📅 Day 6: C# Arrays & Multi-Dimensional Arrays
+
+* Learned **single-dimensional arrays**
+* Worked with **2D arrays**
+* Learned **multi-dimensional arrays**
+* Used:
+
+  * `Length` property
+  * Error handling with `Console.Error`
+  * Program exit using `Environment.Exit()`
 
 ---
 
-## ✅ Day 4: Revision & Practice
-- Revised Git & GitHub workflow
-- Revised .NET basics and C# fundamentals
-- Practiced logical programs
+## 📅 Day 7: C# Methods
+
+* Learned **user-defined methods**
+* Practiced:
+
+  * Parameters & return types
+  * Method reuse
+  * Recursive methods
+* Used **System.Math** functions
 
 ---
 
-## ✅ Day 5: Control Flow Statements
-- Boolean expressions
-- Logical operators
-- Conditional statements:
-  - `if-else`
-  - `switch-case`
-- Loops:
-  - `for`
-  - `while`
-- Used `break` and `continue`
+## 📅 Day 8: C# Strings & Exception Handling
+
+* Worked with **strings and string arrays**
+* Used string methods:
+
+  * `Substring()`
+  * `Replace()`
+  * `Contains()`
+* Learned **Exception Handling**:
+
+  * Common exception types
+  * Checked vs unchecked exceptions
 
 ---
 
-## ✅ Day 6: Arrays & Multi-Dimensional Arrays
-- Single-dimensional arrays
-- 2D arrays
-- Multi-dimensional arrays
-- `Length` property
-- Error handling using `Console.Error`
-- Program exit using `Environment.Exit()`
+## 📅 Day 9: Scenario-Based C# Programs
+
+* Built **menu-driven applications**
+* Programs:
+
+  * String Analyzer
+  * String Formatter
+  * Student Scores Analyzer
+  * Temperature Analyzer
+* Learned:
+
+  * Arrays
+  * Strings
+  * Loops
+  * OOP basics (Class & Object)
 
 ---
 
-## ✅ Day 7: Methods
-- User-defined methods
-- Parameters and return types
-- Method reuse
-- Recursive methods
-- Used `System.Math` functions
+## 📅 Day 10: Scenario-Based Applications & OOP Concepts
+
+* **Library Management System**:
+
+  * Used **3D arrays**
+  * Partial search by title and author
+  * Admin authentication
+* **EduQuiz Application**:
+
+  * Quiz flow
+  * Score calculation
+  * Result evaluation
+* Learned:
+
+  * Constructors
+  * Static vs Instance variables
+  * Access modifiers
 
 ---
 
-## ✅ Day 8: Strings & Exception Handling
-- Worked with strings and string arrays
-- String methods:
-  - `Substring()`
-  - `Replace()`
-  - `Contains()`
-- Exception handling concepts
-- Common exception types
+## 📅 Day 11: OOP-Based Scenario Applications & Utility Classes
+
+### 🔹 Banking System (OOP – Real-World Simulation)
+
+* Developed a **menu-driven Banking System**
+* Implemented classes:
+
+  * `Bank`
+  * `BankManager`
+  * `Client`
+* Features:
+
+  * Open & close account
+  * Deposit & withdrawal
+  * Balance inquiry
+  * View all accounts (manager only)
+* Applied:
+
+  * Encapsulation
+  * Admin authentication
+  * IS-A / HAS-A / USES-A relationships
+* Used arrays for data storage
+
+### 🔹 Invoice Generator for Freelancers
+
+* Built an **Invoice Generator** using strings
+* Parsed tasks and calculated total bill amount
+
+### 🔹 Utility Class – Mathematical Operations
+
+* Implemented reusable static methods:
+
+  * Factorial
+  * Prime check
+  * GCD
+  * Fibonacci
+* Handled edge cases and validations
 
 ---
 
-## ✅ Day 9: Scenario-Based C# Applications
-- Menu-driven programs
-- Applications developed:
-  - String Analyzer
-  - String Formatter
-  - Student Scores Analyzer
-  - Temperature Analyzer
-- Used arrays, strings, loops, and basic OOP
+## 📅 Day 12: Cafeteria Menu App (Arrays & Methods)
+
+* Developed a **menu-driven Cafeteria Ordering System**
+* Used **2D arrays** to store menu items and prices
+* Features:
+
+  * Item selection by index
+  * Quantity handling
+  * Bill generation
+  * Order validation
+* Focused on modular methods and clean flow
 
 ---
 
-## ✅ Day 10: Scenario-Based Applications & OOP Concepts
-- **Library Management System**
-  - 3D arrays
-  - Partial search by title and author
-  - Admin authentication
-- **EduQuiz Application**
-  - Quiz flow
-  - Score calculation
-  - Result evaluation
-- Learned:
-  - Constructors
-  - Static vs instance variables
-  - Access modifiers
+## 📅 Day 13: Inheritance & Loop-Based Scenarios
+
+### 🚌 Bus Route Distance Tracker
+
+* Tracked total distance across bus stops
+* Used **inheritance-based structure**
+* Implemented:
+
+  * `while` loop
+  * Distance accumulator
+  * Exit based on passenger confirmation
+
+### 🎉 Festival Lucky Draw (Diwali Mela)
+
+* Simulated lucky draw for multiple visitors
+* Logic:
+
+  * Number divisible by **both 3 and 5** wins gift
+* Used:
+
+  * Loops
+  * Modulus operator
+  * `continue` for invalid input
 
 ---
 
-## ✅ Day 11: OOP-Based Applications & Utility Classes
+## 📅 Day 14: Encapsulation, Interface, Abstract Classes & Polymorphism
 
-### Banking System
-- Classes:
-  - `Bank`
-  - `BankManager`
-  - `Client`
-- Features:
-  - Open and close accounts
-  - Deposit and withdrawal
-  - Balance inquiry
-  - View all accounts (admin only)
-- Concepts applied:
-  - Encapsulation
-  - IS-A / HAS-A / USES-A relationships
-  - Arrays for data storage
+### 🏥 Hospital Patient Management System
 
-### Other Applications
-- Invoice Generator for Freelancers
-- Utility class with static methods:
-  - Factorial
-  - Prime number check
-  - GCD
-  - Fibonacci series
+* Classes:
 
----
+  * `Patient`, `Doctor`, `Bill`
+* Inheritance:
 
-## ✅ Day 12: Cafeteria Menu App
-- Menu-driven ordering system
-- Used 2D arrays for menu and prices
-- Quantity handling
-- Bill generation
-- Input validation
-- Modular method-based design
+  * `InPatient`, `OutPatient` → `Patient`
+* Interface:
+
+  * `IPayable`
+* Applied:
+
+  * Encapsulation using properties
+  * Polymorphic `DisplayInfo()`
+
+### 🚗 Vehicle Rental Application
+
+* Classes:
+
+  * `Vehicle`, `Bike`, `Car`, `Truck`, `Customer`
+* Used:
+
+  * `protected` fields
+  * Interface `IRentable`
+* Implemented rent calculation using polymorphism
 
 ---
 
-## ✅ Day 13: Inheritance & Loop-Based Scenarios
-- **Bus Route Distance Tracker**
-- **Festival Lucky Draw System**
-- Used:
-  - Inheritance
-  - Loops
-  - Modulus operator
-  - `continue` for invalid inputs
+## 📅 Day 15: Inheritance, Polymorphism & Array Usage
+
+### 🐦 Bird Sanctuary System (EcoWing)
+
+* Base class: `Bird`
+* Interfaces:
+
+  * `IFlyable`
+  * `ISwimmable`
+* Derived classes:
+
+  * Eagle, Sparrow (Fly)
+  * Duck, Penguin (Swim)
+  * Seagull (Fly + Swim)
+* Used arrays to store birds
+* Applied runtime polymorphism using interface checks
+
+### 📞 Customer Service Call Log Manager
+
+* Stored call logs in an **array**
+* Each log includes:
+
+  * PhoneNumber
+  * Message
+  * Timestamp
+* Features:
+
+  * Add call log
+  * Search by keyword (`string.Contains`)
+  * Filter by time range
 
 ---
 
-## ✅ Day 14: Encapsulation, Interface & Polymorphism
+## 📅 Day 16: Data Structures Introduction & Linked List
 
-### Hospital Patient Management System
-- Abstract classes
-- Interfaces (`IPayable`)
-- Encapsulation using properties
-- Polymorphic method calls
+### 👨‍💼 Employee Wage Calculation (Scenario-Based)
 
-### Vehicle Rental Application
-- Inheritance hierarchy
-- Interface-based rent calculation
-- Protected members
+* Introduced **Linked List** concepts
+* Designed employee wage calculation logic
+* Focused on:
+
+  * Dynamic data storage
+  * Sequential access
 
 ---
 
-## ✅ Day 15: Polymorphism & Array Usage
+## 📅 Day 17: Stack, Queue & Dictionary
 
-### Bird Sanctuary System (EcoWing)
-- Base class: `Bird`
-- Interfaces:
-  - `IFlyable`
-  - `ISwimmable`
-- Runtime polymorphism using interface checks
-- Array-based storage
+### 🏠 Smart Home Automation System
 
-### Customer Service Call Log Manager
-- Call logs stored in arrays
-- Search by keyword using `string.Contains`
-- Filter by time range
+* Classes:
 
----
+  * `Appliance`, `Light`, `Fan`, `AC`
+* Interface:
 
-## ✅ Day 16: Data Structures – Linked List
-- Introduction to Linked List
-- Employee Wage Calculation System
-- Dynamic data storage and sequential access
+  * `IControllable` (TurnOn, TurnOff)
+* Used:
+
+  * Stack / Queue concepts
+  * Polymorphism for device-specific behavior
 
 ---
 
-## ✅ Day 17: Stack, Queue & Dictionary
+## 📅 Day 18: Advanced Scenarios & Algorithms
 
-### Smart Home Automation System
-- Stack and Queue implementation
-- Interface-based device control
-- Polymorphic behavior for appliances
+### 🏃 FitTrack – Fitness Tracker
 
----
+* Classes:
 
-## ✅ Day 18: Advanced Scenarios & Algorithms
-- **FitTrack – Fitness Tracker**
-- **ATM Cash Dispenser**
-  - Minimum note dispensing
-  - Greedy algorithm
-  - Fallback handling
-- Sorting Algorithms
-  - Implementation
-  - Time complexity understanding
-  - Real-world use cases
+  * `UserProfile`, `Workout`
+* Interface:
+
+  * `ITrackable`
+* Types:
+
+  * `CardioWorkout`
+  * `StrengthWorkout`
+* Implemented workout tracking with polymorphism
+
+### 🏧 ATM Dispenser Logic
+
+* Goal: Dispense **minimum number of notes**
+* Scenarios:
+
+  * A: Full denominations for ₹880
+  * B: ₹500 note removed
+  * C: Fallback if exact change not possible
+* Applied greedy strategy and validation
+
+### 🔢 Sorting Algorithms
+
+* Implemented multiple sorting techniques
+* Focused on:
+
+  * Logic building
+  * Time complexity understanding
+  * Real-world use cases
 
 ---
 
@@ -289,26 +403,5 @@ To build strong programming fundamentals and industry-ready problem-solving skil
   - Conversion to array for export
 
 ---
-
-## 🚀 Current Status
-- Strong foundation in **C#, Java, OOP, and DSA**
-- Hands-on experience with real-world problem solving
-- Writing clean, modular, and scalable code
-- Actively progressing toward backend development roles
-
----
-
-## 🎯 Next Learning Goals
-- Advanced Data Structures (Trees, Graphs)
-- Design Patterns
-- Multithreading
-- Backend APIs
-- Database Integration
-
----
-
-✅ **Training Status:** Active & Consistent  
-📈 **Goal:** Industry-ready Backend Developer
-
 
 ✅ **Status:** Actively progressing with strong focus on OOP, Data Structures, and real-world C# problem solving.
