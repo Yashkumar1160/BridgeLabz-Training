@@ -11,20 +11,34 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         //array to store contacts
         private Contact[]contacts=new Contact[100];
 
+        
         //variable to store total contacts count
         private int totalContacts = 0;
 
+        
         //dictionary to store contacts according to cities
         Dictionary<string, LinkedList<Contact>>cityContacts=new Dictionary<string, LinkedList<Contact>>();
 
+        
+        //dictionary to store count of person by city
+        Dictionary<string,int>cityCount=new Dictionary<string,int>();
+
+        
         //dictionary to store contacts according to states
         Dictionary<string, LinkedList<Contact>>stateContacts=new Dictionary<string, LinkedList<Contact>>();
+
+        
+        //dictionary to store count of person by state
+        Dictionary<string,int>stateCount=new Dictionary<string,int>();
+
 
         //getter for total contact
         public int TotalContacts
         {
             get { return totalContacts; } 
         }
+
+
 
         //method to check duplicate contacts
         public bool CheckContact(string firstName,string lastName)
@@ -40,6 +54,8 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             return false;
         }
 
+
+
         //implementation of AddNewContact method to add new contact
         public void AddNewContact(Contact contact)
         {
@@ -53,6 +69,14 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             }
             cityContacts[city].AddLast(contact);
 
+            //increase count of person by city
+            if (!cityCount.ContainsKey(city))
+            {
+                cityCount[city] = 0;
+            }
+            cityCount[city]++;  
+
+
             //add contact according to state
             if (!stateContacts.ContainsKey(state))
             {
@@ -60,11 +84,20 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             }
             stateContacts[state].AddLast(contact);
 
+            //increase count of person by state
+            if (!stateCount.ContainsKey(state))
+            {
+                stateCount[state] = 0;
+            }
+            stateCount[state]++;
+
             //add contact
             contacts[totalContacts] = contact;
             totalContacts++;
             Console.WriteLine("\nCONTACT ADDED SUCCESSFULLY");
         }
+
+
 
 
         //implementation of EditPersonContact method to edit person contact
@@ -82,6 +115,8 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             }
             Console.WriteLine("\nPERSON NOT FOUND");
         }
+
+
 
         //helper method for displaying changing choices
         public void DisplayChangingOptions(Contact contact)
@@ -169,6 +204,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         }
 
 
+
         //method to delete person contact by name
         public void DeletePersonContact(string firstName, string lastName)
         {
@@ -195,6 +231,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
 
             Console.WriteLine("\nPERSON CONTACT NOT FOUND");
         }
+
 
 
         //method to add multiple contacts
@@ -248,6 +285,8 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             }
         }
 
+
+
         //method to find person by city or state
         public void SearchByCityOrState(string city,string state)
         {
@@ -261,22 +300,25 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         }
 
 
+
         //method to display contacts according to city
         public void DisplayContactsWithCity()
         {
             foreach (string city in cityContacts.Keys)
             {
                 Console.WriteLine($"\nCONTACTS FROM '{city}' :");
+                Console.WriteLine("\n-------------------------------");
 
                 LinkedList<Contact> contactList = cityContacts[city];
 
                 foreach (Contact c in contactList)
                 {
                     Console.WriteLine(c);
-                    Console.WriteLine("\n-------------------------------");
                 }
             }
         }
+
+
 
 
         //method to display contacts according to state
@@ -285,16 +327,41 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             foreach (string state in stateContacts.Keys)
             {
                 Console.WriteLine($"\nCONTACTS FROM '{state}' :");
+                Console.WriteLine("\n------------------------------------");
 
                 LinkedList<Contact> contactList = stateContacts[state];
 
                 foreach (Contact c in contactList)
                 {
                     Console.WriteLine(c);
-                    Console.WriteLine("\n------------------------------------");
                 }
             }
         }
+
+
+        //method to display number of contacts according to city 
+        public void DisplayCityCount()
+        {
+            Console.WriteLine("\nNUMBER OF CONTACTS BY CITY: ");
+            foreach(string city in cityCount.Keys)
+            {
+                Console.WriteLine(city+" : " + cityCount[city]);
+            }
+        }
+
+
+
+        //method to display number of contacts according to state
+        public void DisplayStateCount()
+        {
+            Console.WriteLine("\nNUMBER OF CONTACTS BY STATE: ");
+            foreach (string state in stateCount.Keys)
+            {
+                Console.WriteLine(state + " : " + stateCount[state]);
+            }
+        }
+
+
 
         //method to display all contacts
         public void DisplayContacts()
@@ -306,8 +373,10 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                 return;
             }
 
+            Console.WriteLine("ALL CONTACTS: ");
+
             //loop through contacts array
-            for(int i=0; i<totalContacts; i++)
+            for (int i=0; i<totalContacts; i++)
             {
                 Console.WriteLine(contacts[i]);
                 Console.WriteLine("\n-------------------------------------------");
