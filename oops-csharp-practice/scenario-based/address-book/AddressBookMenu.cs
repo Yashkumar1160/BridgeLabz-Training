@@ -94,6 +94,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                 Console.WriteLine("7. DISPLAY COUNT BY CITY");
                 Console.WriteLine("8. DISPLAY COUNT BY STATE");
                 Console.WriteLine("9. DELETE PERSON CONTACT");
+                Console.WriteLine("10. SORT CONTACTS BY PERSON NAME");
                 Console.WriteLine("0. RETURN TO ADDRESS BOOK MENU");
                 Console.Write("ENTER YOUR CHOICE: ");
 
@@ -244,6 +245,12 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
 
                         //call DeletePersonContact method
                         utility.DeletePersonContact(personFirstName, personLastName);
+                        break;
+
+                    //sort contacts by person name
+                    case 10:
+                        utility.SortByPersonName();
+                        Console.WriteLine("\nCONTACTS SORTED");
                         break;
 
                     //exit program
