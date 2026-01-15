@@ -10,20 +10,81 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
     {
         public static void Start()
         {
-            Console.WriteLine("-----ADDRESS BOOK SYSTEM-----");
+            Console.WriteLine("----- ADDRESS BOOK SYSTEM -----");
 
             //create object of AddressBookUtilityImpl class
-            AddressBookUtilityImpl utility=new AddressBookUtilityImpl();
+            AddressBookUtilityImpl addressBookUtility = new AddressBookUtilityImpl();
 
             //infinite loop until user exits
             while (true)
             {
+                //display choices
+                Console.WriteLine("\nADDRESS BOOK MENU: ");
+                Console.WriteLine("\n1. CREATE ADDRESS BOOK");
+                Console.WriteLine("2. SELECT ADDRESS BOOK");
+                Console.WriteLine("3. DISPLAY ADDRESS BOOKS");
+                Console.WriteLine("4. EXIT PROGRAM");
+                Console.Write("ENTER YOUR CHOICE: ");
+
+                //take user's choice
+                int choice = Convert.ToInt32(Console.ReadLine());
+
+                //handle user's choice
+                switch (choice)
+                {
+                    //add address book
+                    case 1:
+                        Console.Write("ENTER ADDRESS BOOK NAME: ");
+                        string name = Console.ReadLine();
+
+                        AddressBook book = new AddressBook(name);
+                        addressBookUtility.AddAddressBook(book);
+                        break;
+
+                    //select address book
+                    case 2:
+                        Console.Write("ENTER ADDRESS BOOK NAME: ");
+                        name = Console.ReadLine();
+
+                        AddressBook selectedBook = addressBookUtility.SelectAddressBook(name);
+                        if (selectedBook != null)
+                        {
+                            ShowContactMenu(selectedBook);
+                        }
+                        break;
+
+                    //display address books
+                    case 3:
+                        addressBookUtility.DisplayAddressBooks();
+                        break;
+
+                    case 4:
+                        Console.WriteLine("EXIT SUCCESSFUL");
+                        return;
+
+                    default:
+                        Console.WriteLine("INVALID CHOICE");
+                        break;
+                }
+            }
+        }
+
+        public static void ShowContactMenu(AddressBook selectedBook)
+        {
+
+            //create object of AddressBookUtilityImpl class
+            ContactsUtilityImpl utility=selectedBook.Utility;
+
+            //infinite loop until user exits
+            while (true)
+            {
+                Console.WriteLine("\nCONTACTS MENU");
                 Console.WriteLine("\n1. ADD NEW CONTACT");
                 Console.WriteLine("2. ADD MULTIPLE CONTACTS");
                 Console.WriteLine("3. EDIT PERSON CONTACT");
                 Console.WriteLine("4. DISPLAY CONTACTS");
                 Console.WriteLine("5. DELETE PERSON CONTACT");
-                Console.WriteLine("6. EXIT PROGRAM");
+                Console.WriteLine("6. RETURN TO ADDRESS BOOK MENU");
                 Console.Write("ENTER YOUR CHOICE: ");
 
                 //take user's choice
