@@ -38,5 +38,8 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         //method to display contacts count by state 
         void DisplayStateCount();
 
+        //method to sort contacts by person name
+        void SortByPersonName();
+
     }
 }
