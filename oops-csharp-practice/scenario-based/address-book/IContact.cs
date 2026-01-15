@@ -19,5 +19,8 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
 
         //method to add mmultiple  contacts
         void AddMultipleContacts(int numberOfContacts);
+
+        //method to check for duplicate contact
+        bool CheckContact(string firstName,string lastName,string email);
     }
 }
