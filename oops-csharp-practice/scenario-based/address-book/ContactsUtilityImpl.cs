@@ -14,6 +14,12 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         //variable to store total contacts count
         private int totalContacts = 0;
 
+        //dictionary to store contacts according to cities
+        Dictionary<string, LinkedList<Contact>>cityContacts=new Dictionary<string, LinkedList<Contact>>();
+
+        //dictionary to store contacts according to states
+        Dictionary<string, LinkedList<Contact>>stateContacts=new Dictionary<string, LinkedList<Contact>>();
+
         //getter for total contact
         public int TotalContacts
         {
@@ -37,6 +43,24 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         //implementation of AddNewContact method to add new contact
         public void AddNewContact(Contact contact)
         {
+            string city= contact.City;
+            string state= contact.State;
+
+            //add contact according to city
+            if(!cityContacts.ContainsKey(city))
+            {
+                cityContacts[city] = new LinkedList<Contact>();
+            }
+            cityContacts[city].AddLast(contact);
+
+            //add contact according to state
+            if (!stateContacts.ContainsKey(state))
+            {
+                stateContacts[state] = new LinkedList<Contact>();
+            }
+            stateContacts[state].AddLast(contact);
+
+            //add contact
             contacts[totalContacts] = contact;
             totalContacts++;
             Console.WriteLine("\nCONTACT ADDED SUCCESSFULLY");
@@ -230,8 +254,44 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             for(int i = 0;i < totalContacts;i++)
             {
                 if (contacts[i].City.ToLower() == city.ToLower() || contacts[i].State.ToLower()==state.ToLower())
-                {
+                {   
                     Console.WriteLine($"{contacts[i].FirstName} {contacts[i].LastName}");
+                }
+            }
+        }
+
+
+        //method to display contacts according to city
+        public void DisplayContactsWithCity()
+        {
+            foreach (string city in cityContacts.Keys)
+            {
+                Console.WriteLine($"\nCONTACTS FROM '{city}' :");
+
+                LinkedList<Contact> contactList = cityContacts[city];
+
+                foreach (Contact c in contactList)
+                {
+                    Console.WriteLine(c);
+                    Console.WriteLine("\n-------------------------------");
+                }
+            }
+        }
+
+
+        //method to display contacts according to state
+        public void DisplayContactsWithState()
+        {
+            foreach (string state in stateContacts.Keys)
+            {
+                Console.WriteLine($"\nCONTACTS FROM '{state}' :");
+
+                LinkedList<Contact> contactList = stateContacts[state];
+
+                foreach (Contact c in contactList)
+                {
+                    Console.WriteLine(c);
+                    Console.WriteLine("\n------------------------------------");
                 }
             }
         }
