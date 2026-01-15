@@ -91,8 +91,10 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                 Console.WriteLine("4. DISPLAY CONTACTS");
                 Console.WriteLine("5. DISPLAY BY CITY");
                 Console.WriteLine("6. DISPLAY BY STATE");
-                Console.WriteLine("7. DELETE PERSON CONTACT");
-                Console.WriteLine("8. RETURN TO ADDRESS BOOK MENU");
+                Console.WriteLine("7. DISPLAY COUNT BY CITY");
+                Console.WriteLine("8. DISPLAY COUNT BY STATE");
+                Console.WriteLine("9. DELETE PERSON CONTACT");
+                Console.WriteLine("0. RETURN TO ADDRESS BOOK MENU");
                 Console.Write("ENTER YOUR CHOICE: ");
 
                 //take user's choice
@@ -214,8 +216,18 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                         utility.DisplayContactsWithState();
                         break;
 
-                    //delete person contact
+                    //display contact count by city
                     case 7:
+                        utility.DisplayCityCount();
+                        break;
+
+                    //display contact count by state
+                    case 8:
+                        utility.DisplayStateCount();
+                        break;
+
+                    //delete person contact
+                    case 9:
                         if (utility.TotalContacts == 0)
                         {
                             Console.WriteLine("\nNO CONTACT EXISTS");
@@ -235,7 +247,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                         break;
 
                     //exit program
-                    case 8:
+                    case 0:
                         Console.WriteLine("\nEXIT SUCCESSFUL");
                         return;
 
