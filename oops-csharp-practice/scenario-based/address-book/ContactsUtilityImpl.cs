@@ -224,6 +224,18 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             }
         }
 
+        //method to find person by city or state
+        public void SearchByCityOrState(string city,string state)
+        {
+            for(int i = 0;i < totalContacts;i++)
+            {
+                if (contacts[i].City.ToLower() == city.ToLower() || contacts[i].State.ToLower()==state.ToLower())
+                {
+                    Console.WriteLine($"{contacts[i].FirstName} {contacts[i].LastName}");
+                }
+            }
+        }
+
         //method to display all contacts
         public void DisplayContacts()
         {
