@@ -25,5 +25,12 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
 
         //method to find person by state or city
         void SearchByCityOrState(string firstName,string lastName);
+
+        //method to display contacts by city
+        void DisplayContactsWithCity();
+
+        //method to display contacts by state
+        void DisplayContactsWithState();
+
     }
 }
