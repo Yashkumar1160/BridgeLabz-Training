@@ -363,6 +363,24 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
 
 
 
+        //method to sort contacts by person name using bubble sort
+        public void SortByPersonName()
+        {
+            for (int i = 0; i < totalContacts - 1; i++)
+            {
+                for (int j = 0; j < totalContacts - i - 1; j++)
+                {
+                    if (string.Compare(contacts[j].FirstName,contacts[j + 1].FirstName,true) > 0)
+                    {
+                        Contact temp = contacts[j];
+                        contacts[j] = contacts[j + 1];
+                        contacts[j + 1] = temp;
+                    }
+                }
+            }
+        }
+
+
         //method to display all contacts
         public void DisplayContacts()
         {
