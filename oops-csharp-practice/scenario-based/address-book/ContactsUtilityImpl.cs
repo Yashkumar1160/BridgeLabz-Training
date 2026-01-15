@@ -20,11 +20,26 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             get { return totalContacts; } 
         }
 
+        //method to check duplicate contacts
+        public bool CheckContact(string firstName,string lastName)
+        {
+            for(int i = 0; i < totalContacts; i++)
+            {
+                //if name is already present
+                if(firstName.ToLower() == contacts[i].FirstName.ToLower() && lastName.ToLower() == contacts[i].LastName.ToLower())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         //implementation of AddNewContact method to add new contact
         public void AddNewContact(Contact contact)
-        { 
+        {
             contacts[totalContacts] = contact;
             totalContacts++;
+            Console.WriteLine("\nCONTACT ADDED SUCCESSFULLY");
         }
 
 
