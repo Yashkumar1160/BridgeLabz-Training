@@ -22,5 +22,8 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
 
         //method to check for duplicate contact
         bool CheckContact(string firstName,string lastName);
+
+        //method to find person by state or city
+        void SearchByCityOrState(string firstName,string lastName);
     }
 }
