@@ -20,7 +20,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             {
                 //display choices
                 Console.WriteLine("\nADDRESS BOOK MENU: ");
-                Console.WriteLine("\n1. CREATE ADDRESS BOOK");
+                Console.WriteLine("1. CREATE ADDRESS BOOK");
                 Console.WriteLine("2. SELECT ADDRESS BOOK");
                 Console.WriteLine("3. DISPLAY ADDRESS BOOKS");
                 Console.WriteLine("4. EXIT PROGRAM");
@@ -34,7 +34,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                 {
                     //add address book
                     case 1:
-                        Console.Write("ENTER ADDRESS BOOK NAME: ");
+                        Console.Write("\nENTER ADDRESS BOOK NAME: ");
                         string name = Console.ReadLine();
 
                         AddressBook book = new AddressBook(name);
@@ -43,7 +43,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
 
                     //select address book
                     case 2:
-                        Console.Write("ENTER ADDRESS BOOK NAME: ");
+                        Console.Write("\nENTER ADDRESS BOOK NAME: ");
                         name = Console.ReadLine();
 
                         AddressBook selectedBook = addressBookUtility.SelectAddressBook(name);
@@ -59,11 +59,11 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                         break;
 
                     case 4:
-                        Console.WriteLine("EXIT SUCCESSFUL");
+                        Console.WriteLine("\nEXIT SUCCESSFUL");
                         return;
 
                     default:
-                        Console.WriteLine("INVALID CHOICE");
+                        Console.WriteLine("\nINVALID CHOICE");
                         break;
                 }
             }
@@ -79,7 +79,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             while (true)
             {
                 Console.WriteLine("\nCONTACTS MENU");
-                Console.WriteLine("\n1. ADD NEW CONTACT");
+                Console.WriteLine("1. ADD NEW CONTACT");
                 Console.WriteLine("2. ADD MULTIPLE CONTACTS");
                 Console.WriteLine("3. EDIT PERSON CONTACT");
                 Console.WriteLine("4. DISPLAY CONTACTS");
@@ -110,10 +110,17 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                         Console.Write("ENTER LAST NAME: ");
                         string lastName =Console.ReadLine();
 
+                        //check duplicate contact
+                        if (utility.CheckContact(firstName, lastName))
+                        {
+                            Console.WriteLine("\nCONTACT ALREADY EXISTS FOR THIS PERSON");
+                            break;
+                        }
+
                         //take email
                         Console.Write("ENTER EMAIL: ");
                         string email =Console.ReadLine();
-                        
+
                         //take city
                         Console.Write("ENTER CITY: ");
                         string city =Console.ReadLine();
@@ -139,8 +146,6 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
 
                         //add new contact
                         utility.AddNewContact(contact);
-
-                        Console.WriteLine("\nCONTACT ADDED SUCCESSFULLY");
                         break;
 
 
