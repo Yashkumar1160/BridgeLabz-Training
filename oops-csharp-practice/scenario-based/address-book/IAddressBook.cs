@@ -14,5 +14,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         //method to select specific address book
         AddressBook SelectAddressBook(string name);
 
+        //method to search person contact by city or state
+        void SearchByCityOrState();
     }
 }
