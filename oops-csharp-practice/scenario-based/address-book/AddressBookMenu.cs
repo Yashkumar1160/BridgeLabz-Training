@@ -22,8 +22,9 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                 Console.WriteLine("\nADDRESS BOOK MENU: ");
                 Console.WriteLine("1. CREATE ADDRESS BOOK");
                 Console.WriteLine("2. SELECT ADDRESS BOOK");
-                Console.WriteLine("3. DISPLAY ADDRESS BOOKS");
-                Console.WriteLine("4. EXIT PROGRAM");
+                Console.WriteLine("3. SEARCH BY CITY OR STATE");
+                Console.WriteLine("4. DISPLAY ADDRESS BOOKS");
+                Console.WriteLine("5. EXIT PROGRAM");
                 Console.Write("ENTER YOUR CHOICE: ");
 
                 //take user's choice
@@ -53,12 +54,17 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                         }
                         break;
 
-                    //display address books
+                    //search by state or city
                     case 3:
+                        addressBookUtility.SearchByCityOrState();
+                        break;
+
+                    //display address books
+                    case 4:
                         addressBookUtility.DisplayAddressBooks();
                         break;
 
-                    case 4:
+                    case 5:
                         Console.WriteLine("\nEXIT SUCCESSFUL");
                         return;
 
