@@ -48,6 +48,33 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         }
 
 
+        //method to search person by city or state
+        public void SearchByCityOrState()
+        {
+            if (addressBooks.Count == 0)
+            {
+                Console.WriteLine("\nNO ADDRESS BOOK EXISTS");
+                return;
+            }
+
+            Console.Write("\nENTER CITY: ");
+            string city = Console.ReadLine();
+
+            Console.Write("ENTER STATE");
+            string state = Console.ReadLine();
+
+            foreach (string addressBookName in addressBooks.Keys)
+            {
+                Console.WriteLine($"\nPERSON IN {addressBookName}:");
+
+                AddressBook addressBook = addressBooks[addressBookName];
+
+                ContactsUtilityImpl utility=addressBook.Utility;
+
+                utility.SearchByCityOrState(city, state);
+            }
+        }
+
         //method to display address books
         public void DisplayAddressBooks()
         {
