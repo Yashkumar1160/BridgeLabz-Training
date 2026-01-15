@@ -8,16 +8,11 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
 {
     internal interface IAddressBook
     {
-        //method to add new contact
-        void AddNewContact(Contact contact);
+        //method to add address book
+        void AddAddressBook(AddressBook addressBook);
 
-        //method to edit person contact
-        void EditPersonContact(string firstName,string lastName);
+        //method to select specific address book
+        AddressBook SelectAddressBook(string name);
 
-        //method to delete person contact
-        void DeletePersonContact(string firstName,string lastName);
-
-        //method to add mmultiple  contacts
-        void AddMultipleContacts(int numberOfContacts);
     }
 }
