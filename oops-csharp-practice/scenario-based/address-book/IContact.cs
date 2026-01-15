@@ -32,5 +32,11 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         //method to display contacts by state
         void DisplayContactsWithState();
 
+        //method to display contacts count by city
+        void DisplayCityCount();
+
+        //method to display contacts count by state 
+        void DisplayStateCount();
+
     }
 }
