@@ -15,9 +15,11 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             //create object of AddressBookUtilityImpl class
             AddressBookUtilityImpl addressBookUtility = new AddressBookUtilityImpl();
 
+
             //infinite loop until user exits
             while (true)
             {
+            
                 //display choices
                 Console.WriteLine("\nADDRESS BOOK MENU: ");
                 Console.WriteLine("1. CREATE ADDRESS BOOK");
@@ -27,12 +29,15 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                 Console.WriteLine("5. EXIT PROGRAM");
                 Console.Write("ENTER YOUR CHOICE: ");
 
+                
                 //take user's choice
                 int choice = Convert.ToInt32(Console.ReadLine());
 
+                
                 //handle user's choice
                 switch (choice)
                 {
+                
                     //add address book
                     case 1:
                         Console.Write("\nENTER ADDRESS BOOK NAME: ");
@@ -41,6 +46,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                         AddressBook book = new AddressBook(name);
                         addressBookUtility.AddAddressBook(book);
                         break;
+
 
                     //select address book
                     case 2:
@@ -54,19 +60,24 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                         }
                         break;
 
+
                     //search by state or city
                     case 3:
                         addressBookUtility.SearchByCityOrState();
                         break;
+
 
                     //display address books
                     case 4:
                         addressBookUtility.DisplayAddressBooks();
                         break;
 
+
+                    //exit
                     case 5:
                         Console.WriteLine("\nEXIT SUCCESSFUL");
                         return;
+
 
                     default:
                         Console.WriteLine("\nINVALID CHOICE");
@@ -75,15 +86,20 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
             }
         }
 
+
+
+        //method to display contact menu
         public static void ShowContactMenu(AddressBook selectedBook)
         {
 
             //create object of AddressBookUtilityImpl class
             ContactsUtilityImpl utility=selectedBook.Utility;
 
+        
             //infinite loop until user exits
             while (true)
             {
+            
                 Console.WriteLine("\nCONTACTS MENU");
                 Console.WriteLine("1. ADD NEW CONTACT");
                 Console.WriteLine("2. ADD MULTIPLE CONTACTS");
@@ -95,15 +111,21 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                 Console.WriteLine("8. DISPLAY COUNT BY STATE");
                 Console.WriteLine("9. DELETE PERSON CONTACT");
                 Console.WriteLine("10. SORT CONTACTS BY PERSON NAME");
+                Console.WriteLine("11. SORT CONTACTS BY CITY");
+                Console.WriteLine("12. SORT CONTACTS BY STATE");
+                Console.WriteLine("13. SORT CONTACTS BY ZIP CODES");
                 Console.WriteLine("0. RETURN TO ADDRESS BOOK MENU");
                 Console.Write("ENTER YOUR CHOICE: ");
 
+                
                 //take user's choice
                 int choice=Convert.ToInt32(Console.ReadLine());
+
 
                 //handle user's choice
                 switch(choice)
                 {
+                
                     //add new contact
                     case 1:
                         //if address book is full
@@ -160,6 +182,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                         break;
 
 
+                    
                     //add multiple contacts
                     case 2:
                         //if address book is full
@@ -179,6 +202,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                         break;
 
 
+                    
                     //edit person contact
                     case 3:
                         //if no contact exists
@@ -201,10 +225,12 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                         break; 
 
 
+
                     //display contacts
                     case 4:
                         utility.DisplayContacts();
                         break;
+
 
                     //display contacts by city
                     case 5:
@@ -217,15 +243,18 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                         utility.DisplayContactsWithState();
                         break;
 
+
                     //display contact count by city
                     case 7:
                         utility.DisplayCityCount();
                         break;
 
+
                     //display contact count by state
                     case 8:
                         utility.DisplayStateCount();
                         break;
+
 
                     //delete person contact
                     case 9:
@@ -247,11 +276,34 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
                         utility.DeletePersonContact(personFirstName, personLastName);
                         break;
 
+
                     //sort contacts by person name
                     case 10:
                         utility.SortByPersonName();
                         Console.WriteLine("\nCONTACTS SORTED");
                         break;
+
+
+                    //sort contacts by city
+                    case 11:
+                        utility.SortByCity();
+                        Console.WriteLine("\nCONTACTS SORTED");
+                        break;
+
+
+                    //sort contacts by state
+                    case 12:
+                        utility.SortByState();
+                        Console.WriteLine("\nCONTACTS SORTED");
+                        break;
+
+
+                    //sort contacts by zip
+                    case 13:
+                        utility.SortByZip();
+                        Console.WriteLine("\nCONTACTS SORTED");
+                        break;
+
 
                     //exit program
                     case 0:
