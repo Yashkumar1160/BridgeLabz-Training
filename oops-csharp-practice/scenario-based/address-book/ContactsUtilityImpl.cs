@@ -381,6 +381,64 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         }
 
 
+
+        //method to sort contacts by state using bubble sort
+        public void SortByState()
+        {
+            for (int i = 0; i < totalContacts - 1; i++)
+            {
+                for (int j = 0; j < totalContacts - i - 1; j++)
+                {
+                    if (string.Compare(contacts[j].State, contacts[j + 1].State, true) > 0)
+                    {
+                        Contact temp = contacts[j];
+                        contacts[j] = contacts[j + 1];
+                        contacts[j + 1] = temp;
+                    }
+                }
+            }
+        }
+
+
+
+        //method to sort contacts by city using bubble sort
+        public void SortByCity()
+        {
+            for (int i = 0; i < totalContacts - 1; i++)
+            {
+                for (int j = 0; j < totalContacts - i - 1; j++)
+                {
+                    if (string.Compare(contacts[j].City, contacts[j + 1].City, true) > 0)
+                    {
+                        Contact temp = contacts[j];
+                        contacts[j] = contacts[j + 1];
+                        contacts[j + 1] = temp;
+                    }
+                }
+            }
+        }
+
+
+
+        //method to sort contacts by zip codes using bubble sort
+        public void SortByZip()
+        {
+            for (int i = 0; i < totalContacts - 1; i++)
+            {
+                for (int j = 0; j < totalContacts - i - 1; j++)
+                {
+                    if (string.Compare(contacts[j].Zip, contacts[j + 1].Zip, true) > 0)
+                    {
+                        Contact temp = contacts[j];
+                        contacts[j] = contacts[j + 1];
+                        contacts[j + 1] = temp;
+                    }
+                }
+            }
+        }
+
+
+
         //method to display all contacts
         public void DisplayContacts()
         {
