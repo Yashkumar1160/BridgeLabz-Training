@@ -17,7 +17,7 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         //method to delete person contact
         void DeletePersonContact(string firstName,string lastName);
 
-        //method to add mmultiple  contacts
+        //method to add multiple  contacts
         void AddMultipleContacts(int numberOfContacts);
 
         //method to check for duplicate contact
@@ -41,5 +41,12 @@ namespace BridgeLabzTraining.oops_csharp_practice.scenario_based.address_book
         //method to sort contacts by person name
         void SortByPersonName();
 
+        //method to sort contacts by city
+        void SortByCity();
+        //method to sort contacts by city
+        void SortByState();
+
+        //method to sort contacts by city
+        void SortByZip();
     }
 }
