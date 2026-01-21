@@ -415,4 +415,137 @@
 
 ---
 
+## 📅 Day 21: Linked List & Real-World Scenarios
+
+### Address Book (Scenario-Based)
+- Implemented Address Book application
+- Used DSA concepts and OOP principles
+- Operations:
+  - Add contact
+  - Search contact
+  - Delete contact
+  - Display all contacts
+
+### BrowserBuddy – Tab History Manager
+- Used **Doubly Linked List** for browser history
+- Used **Stack** to store recently closed tabs
+- Features:
+  - Backward and forward navigation
+  - Restore closed tabs
+  - Memory-efficient pointer-based management
+
+---
+
+## 📅 Day 22: Circular Linked List, Queue & Hash-Based Systems
+
+### TrafficManager – Roundabout Vehicle Flow
+- Vehicles modeled as nodes in a **Circular Linked List**
+- Waiting vehicles handled using **Queue**
+- Features:
+  - Add and remove vehicles dynamically
+  - Queue overflow and underflow handling
+  - Print real-time roundabout state
+
+### BookShelf – Library Organizer
+- Used **HashMap**: Genre → List of Books
+- Each genre maintained using **LinkedList**
+- Features:
+  - Genre-wise catalog management
+  - Efficient insertion and deletion
+  - Optional **HashSet** to avoid duplication
+
+---
+
+## 📅 Day 23: Sorting Algorithms – Real-World Use Cases
+
+### FlashDealz – Product Sorting by Discount (Quick Sort)
+- Implemented **Quick Sort**
+- Designed for large unsorted datasets
+- Focused on:
+  - Average-case performance
+  - Backend optimization
+
+### FitnessTracker – Daily Step Ranking (Bubble Sort)
+- Implemented **Bubble Sort**
+- Suitable for small datasets (<20 users)
+- Focused on:
+  - Frequent updates
+  - Real-time leaderboard re-sorting
+
+---
+
+## 📅 Day 24: Generics, Linked Lists & Stack-Based Systems
+
+### C# Generics
+- Generic classes and methods
+- Type safety and reusability
+
+### ParcelTracker – Delivery Chain Management
+- Implemented using **Singly Linked List**
+- Each node represents a delivery stage
+- Features:
+  - Forward tracking
+  - Custom intermediate checkpoints
+  - Handling missing or lost parcels
+
+### ExamProctor – Online Exam Review System
+- Used **Stack** for question navigation
+- Used **HashMap** for storing answers
+- Auto score calculation using functions
+- Features:
+  - Track navigation history
+  - Answer evaluation logic
+
+---
+
+## 📅 Day 25: Collections Framework, Radix Sort & Backtracking
+
+### Collections Framework Overview
+- What is Collections Framework
+- Hierarchy of Collections
+- List, Set, Queue, Deque interfaces
+- Map interface and implementations
+- Comparison of implementations
+- Real-world use cases and best practices
+
+### Sorting Aadhar Numbers – Radix Sort
+- Sorted 12-digit Aadhar numbers efficiently
+- Scenarios:
+  - Ascending order sorting
+  - Binary search after sorting
+  - Stable ordering for same prefixes
+
+### Backtracking – Password Cracker Simulator
+- Generated all combinations of length `n`
+- Early termination on password match
+- Visualized time and space complexity
+
+---
+
+## 📅 Day 26: Merge Sort, Queue Systems & I/O Streams
+
+### EduResults – Rank Sheet Generator (Merge Sort)
+- Used **Merge Sort** for large datasets
+- Merged sorted district-wise lists
+- Ensured stable sorting for duplicate scores
+
+### SmartCheckout – Supermarket Billing System
+- Used **Queue** for customer flow
+- Used **HashMap** for item price and stock
+- Features:
+  - Add/remove customers
+  - Billing calculation
+  - Stock updates
+
+### C# I/O Streams
+- Types of Streams:
+  - File Streams
+  - Object Streams
+  - ByteArray Streams
+  - Buffered Streams
+  - Reader and Writer
+- Key considerations and best practices
+
+---
+
 ✅ **Status:** Actively progressing with strong focus on OOP, Data Structures, and real-world C# problem solving.
