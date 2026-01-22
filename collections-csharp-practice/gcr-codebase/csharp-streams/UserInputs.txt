@@ -1,0 +1,3 @@
+Name: yash
+Age: 30
+Sentence: abcdefghojklmnopqrstuvwxyz
