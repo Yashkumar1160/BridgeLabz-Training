@@ -1,0 +1,14 @@
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\collections-csharp-practice\scenario-based\ocean-fleet\bin\Debug\net10.0\ocean-fleet.exe
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\collections-csharp-practice\scenario-based\ocean-fleet\bin\Debug\net10.0\ocean-fleet.deps.json
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\collections-csharp-practice\scenario-based\ocean-fleet\bin\Debug\net10.0\ocean-fleet.runtimeconfig.json
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\collections-csharp-practice\scenario-based\ocean-fleet\bin\Debug\net10.0\ocean-fleet.dll
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\collections-csharp-practice\scenario-based\ocean-fleet\bin\Debug\net10.0\ocean-fleet.pdb
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\collections-csharp-practice\scenario-based\ocean-fleet\obj\Debug\net10.0\ocean-fleet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\collections-csharp-practice\scenario-based\ocean-fleet\obj\Debug\net10.0\ocean-fleet.AssemblyInfoInputs.cache
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\collections-csharp-practice\scenario-based\ocean-fleet\obj\Debug\net10.0\ocean-fleet.AssemblyInfo.cs
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\collections-csharp-practice\scenario-based\ocean-fleet\obj\Debug\net10.0\ocean-fleet.csproj.CoreCompileInputs.cache
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\collections-csharp-practice\scenario-based\ocean-fleet\obj\Debug\net10.0\ocean-fleet.dll
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\collections-csharp-practice\scenario-based\ocean-fleet\obj\Debug\net10.0\refint\ocean-fleet.dll
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\collections-csharp-practice\scenario-based\ocean-fleet\obj\Debug\net10.0\ocean-fleet.pdb
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\collections-csharp-practice\scenario-based\ocean-fleet\obj\Debug\net10.0\ocean-fleet.genruntimeconfig.cache
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\collections-csharp-practice\scenario-based\ocean-fleet\obj\Debug\net10.0\ref\ocean-fleet.dll
