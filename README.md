@@ -548,4 +548,159 @@
 
 ---
 
+## 📅 Day 27: Exception Handling & Circular Linked List
+
+### Exception Handling in C#
+- Introduction to Exceptions
+- Types of Exceptions:
+  - Checked Exceptions
+  - Unchecked Exceptions
+- Handling Exceptions using:
+  - `try-catch` blocks
+  - `try-catch-finally` blocks
+  - `try-with-resources` statement
+  - `throw` statement
+  - `throws` clause
+- Creating Custom Exceptions:
+  - Extending `Exception` class
+  - Defining constructors
+  - Custom error messages
+
+### 🚑 AmbulanceRoute – Emergency Patient Navigation
+- Scenario-based hospital emergency routing system
+- Used **Circular Linked List**
+- Each node represents a hospital unit:
+  - Emergency → Radiology → Surgery → ICU → Emergency
+- Features:
+  - Rotate through units to find nearest available unit
+  - Simulated patient redirection in circular path
+  - Remove unit dynamically if under maintenance
+- Applied exception handling for unavailable units
+
+---
+
+## 📅 Day 28: Regex, Testing Frameworks, Annotations & Reflection
+
+### Regular Expressions (Regex)
+- MetaCharacters
+- Quantifiers
+- Common Regex Patterns:
+  - Email validation
+  - Password strength validation
+  - Phone number format
+- C# Regex API:
+  - Pattern
+  - Matcher
+- Regex Methods:
+  - `find()`
+  - `matches()`
+  - `replaceAll()`
+
+### NUnit Framework
+- Introduction to NUnit
+- NUnit annotations
+- Writing test cases
+- Structure of a test class
+- Assertions
+
+### Annotations
+- Introduction to annotations
+- Common built-in annotations
+- Creating custom annotations
+- Advanced custom annotations
+- Real-world use cases
+- Annotation processing tools
+
+### Reflection
+- Understanding reflection
+- Using Reflection in .NET
+- Annotations and Reflection integration
+
+---
+
+## 📅 Day 29: Annotation-Based Systems, CSV Handling & MSTest
+
+### 🏥 HealthCheckPro – API Metadata Validator
+- Scenario-based REST API validation system
+- Used custom annotations:
+  - `@PublicAPI`
+  - `@RequiresAuth`
+- Used Reflection to:
+  - Scan controller classes
+  - Detect missing annotations
+  - Auto-generate API documentation
+
+### 📊 EventTracker – Auto Audit System
+- Enterprise-level event logging system
+- Used:
+  - Custom `@AuditTrail` annotation
+  - Reflection to scan annotated methods
+  - JSON format for structured logs
+- Logged:
+  - Timestamp
+  - Event metadata
+  - Action details
+
+### CSV Data Handling
+- Introduction to CSV
+- Reading CSV files
+- Writing CSV files
+- Parsing CSV data
+- Data validation
+
+### Scenario-Based Applications
+- **AeroVigil System**
+- **Bank Account Validation System**
+  - CSV-driven input
+  - Validation rules
+  - Custom exception handling
+
+### Testing Framework
+- Introduction to **MSTest**
+
+---
+
+## 📅 Day 30: JSON Handling & Scenario-Based Applications
+
+### JSON Concepts
+- Introduction to JSON
+- Reading JSON data
+- Writing JSON data
+- Parsing JSON data
+- JSON Schema validation
+
+### Scenario-Based Applications
+- **StreamBuzz**
+- **Ocean Fleet Management System**
+
+---
+
+## 📅 Day 31: Advanced Scenario-Based String & Logistics Systems
+
+### Scenario-Based Applications
+- **Lexical Twist**
+  - String manipulation and validation
+- **Future Logistics**
+  - Data processing and system flow logic
+
+---
+
+## 📅 Day 32: OOP Design Principles & Design Patterns
+
+### Design Principles
+- SOLID Principles
+- KISS Principle
+- DRY Principle
+- DIY Principle
+
+### Design Patterns
+- Introduction to design patterns
+- Real-world applicability
+
+### Scenario-Based Application
+- **FlipKey**
+
+---
+
+
 ✅ **Status:** Actively progressing with strong focus on OOP, Data Structures, and real-world C# problem solving.
