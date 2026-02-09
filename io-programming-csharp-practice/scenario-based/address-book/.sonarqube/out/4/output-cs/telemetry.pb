@@ -1,0 +1,1 @@
+ÄR¬C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBook.Tests\AddressBook.Tests.csproj¢net10.0òCSharp14

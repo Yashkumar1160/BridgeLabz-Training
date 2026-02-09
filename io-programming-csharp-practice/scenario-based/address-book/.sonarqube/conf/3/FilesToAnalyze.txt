@@ -1,0 +1,16 @@
+﻿C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\addressbookfolder\AddressBook.cs
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\addressbookfolder\AddressBookExceptions.cs
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\addressbookfolder\AddressBookMenu.cs
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\addressbookfolder\AddressBookUtilityImpl.cs
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\addressbookfolder\IAddressBook.cs
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\Contact.cs
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\ContactException.cs
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\ContactMenu.cs
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\ContactsUtilityImpl.cs
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\ContactValidation.cs
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\DisplayFieldAttribute.cs
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\FileIOUtility.cs
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\IContact.cs
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\ContactsCsv.csv
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\ContactsJson.json
+C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\ContactsText.txt

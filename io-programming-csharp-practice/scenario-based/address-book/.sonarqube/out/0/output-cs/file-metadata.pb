@@ -1,0 +1,17 @@
+ß
+ÓC:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\obj\Debug\net10.0\AddressBookClassLibrary.AssemblyInfo.csutf-8ç
+ÛC:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.csutf-8á
+ÕC:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\obj\Debug\net10.0\AddressBookClassLibrary.GlobalUsings.g.csutf-8·
+­C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\IContact.csutf-8¼
+²C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\FileIOUtility.csutf-8Ä
+ºC:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\DisplayFieldAttribute.csutf-8À
+¶C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\ContactValidation.csutf-8Â
+¸C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\ContactsUtilityImpl.csutf-8º
+°C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\ContactMenu.csutf-8¿
+µC:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\ContactException.csutf-8¶
+¬C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\contact\Contact.csutf-8Å
+»C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\addressbookfolder\IAddressBook.csutf-8Ï
+ÅC:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\addressbookfolder\AddressBookUtilityImpl.csutf-8È
+¾C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\addressbookfolder\AddressBookMenu.csutf-8Î
+ÄC:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\addressbookfolder\AddressBookExceptions.csutf-8Ä
+ºC:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\addressbookfolder\AddressBook.csutf-8
