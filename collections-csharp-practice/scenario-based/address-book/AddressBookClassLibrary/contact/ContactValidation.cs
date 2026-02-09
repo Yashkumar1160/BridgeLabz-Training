@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using BridgeLabzTraining.collections_csharp_practice.scenario_based.address_book.AddressBookClassLibrary.addressbookfolder;
 
-namespace BridgeLabzTraining.collections_csharp_practice.scenario_based.address_book
+namespace BridgeLabzTraining.collections_csharp_practice.scenario_based.address_book.AddressBookClassLibrary.contact
 {
-    internal class ContactValidation
+    public class ContactValidation
     {
         //method to validate email
         public static void ValidateEmail(string email)

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BridgeLabzTraining.collections_csharp_practice.scenario_based.address_book.AddressBookClassLibrary.contact;
 
-namespace BridgeLabzTraining.collections_csharp_practice.scenario_based.address_book
+namespace BridgeLabzTraining.collections_csharp_practice.scenario_based.address_book.AddressBookClassLibrary.addressbookfolder
 {
-    internal class AddressBook
+    public class AddressBook
     {
         //variable to store address book name
         public string AddressBookName { get;  set; }

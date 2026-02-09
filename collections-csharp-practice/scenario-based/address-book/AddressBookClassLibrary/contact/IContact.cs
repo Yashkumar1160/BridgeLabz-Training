@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BridgeLabzTraining.collections_csharp_practice.scenario_based.address_book.AddressBookClassLibrary.addressbookfolder;
 
-namespace BridgeLabzTraining.collections_csharp_practice.scenario_based.address_book
+namespace BridgeLabzTraining.collections_csharp_practice.scenario_based.address_book.AddressBookClassLibrary.contact
 {
-    internal interface IContact
+    public interface IContact
     {
         //method to add new contact
         void AddNewContact(Contact contact);
@@ -48,5 +49,11 @@ namespace BridgeLabzTraining.collections_csharp_practice.scenario_based.address_
 
         //method to sort contacts by city
         void SortByZip();
+        
+        //method to get total contact count
+        int TotalContacts();
+
+        //method to display contacts
+        void DisplayContacts();
     }
 }

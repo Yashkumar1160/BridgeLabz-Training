@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BridgeLabzTraining.collections_csharp_practice.scenario_based.address_book.AddressBookClassLibrary.contact;
 
-namespace BridgeLabzTraining.collections_csharp_practice.scenario_based.address_book
+namespace BridgeLabzTraining.collections_csharp_practice.scenario_based.address_book.AddressBookClassLibrary.addressbookfolder
 {
-    internal class AddressBookUtilityImpl : IAddressBook 
+    public class AddressBookUtilityImpl : IAddressBook 
     {
         //dictionary to store address book
         private Dictionary<string, AddressBook> addressBooks = new Dictionary<string, AddressBook>();

@@ -1,112 +1,20 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using BridgeLabzTraining.collections_csharp_practice.scenario_based.address_book.AddressBookClassLibrary.contact;
+using BridgeLabzTraining.collections_csharp_practice.scenario_based.address_book.AddressBookClassLibrary.addressbookfolder;
 
-namespace BridgeLabzTraining.collections_csharp_practice.scenario_based.address_book
+namespace BridgeLabzTraining.collections_csharp_practice.scenario_based.address_book.AddressBookClassLibrary.contact
 {
-    internal class AddressBookMenu
+    public class ContactMenu
     {
-        public static void Start()
-        {
-            Console.WriteLine("----- ADDRESS BOOK SYSTEM -----");
-
-            //create object of AddressBookUtilityImpl class
-            AddressBookUtilityImpl addressBookUtility = new AddressBookUtilityImpl();
-
-
-            //infinite loop until user exits
-            while (true)
-            {
-
-                //display choices
-                Console.WriteLine("\nADDRESS BOOK MENU: ");
-                Console.WriteLine("1. CREATE ADDRESS BOOK");
-                Console.WriteLine("2. SELECT ADDRESS BOOK");
-                Console.WriteLine("3. SEARCH BY CITY OR STATE");
-                Console.WriteLine("4. DISPLAY ADDRESS BOOKS");
-                Console.WriteLine("5. EXIT PROGRAM");
-                Console.Write("ENTER YOUR CHOICE: ");
-
-
-                //take user's choice
-                int choice = Convert.ToInt32(Console.ReadLine());
-
-
-                //handle user's choice
-                switch (choice)
-                {
-
-                    //add address book
-                    case 1:
-                        Console.Write("\nENTER ADDRESS BOOK NAME: ");
-                        string name = Console.ReadLine();
-
-                        try
-                        {
-                            AddressBook book = new AddressBook(name);
-                            addressBookUtility.AddAddressBook(book);
-                        }
-                        catch (DuplicateAddressBookException ex)
-                        {
-                            Console.WriteLine(ex.Message);
-                        }
-
-                        break;
-
-
-                    //select address book
-                    case 2:
-                        Console.Write("\nENTER ADDRESS BOOK NAME: ");
-                        name = Console.ReadLine();
-
-                        try
-                        {
-                            AddressBook selectedBook = addressBookUtility.SelectAddressBook(name);
-                            ShowContactMenu(selectedBook);
-                        }
-                        catch (AddressBookNotFoundException ex)
-                        {
-                            Console.WriteLine(ex.Message);
-                        }
-                        break;
-
-
-
-                    //search by state or city
-                    case 3:
-                        addressBookUtility.SearchByCityOrState();
-                        break;
-
-
-                    //display address books
-                    case 4:
-                        addressBookUtility.DisplayAddressBooks();
-                        break;
-
-
-                    //exit
-                    case 5:
-                        Console.WriteLine("\nEXIT SUCCESSFUL");
-                        return;
-
-
-                    default:
-                        Console.WriteLine("\nINVALID CHOICE");
-                        break;
-                }
-            }
-        }
-
-
-
         //method to display contact menu
         public static void ShowContactMenu(AddressBook selectedBook)
         {
 
             //create object of AddressBookUtilityImpl class
-            ContactsUtilityImpl utility = selectedBook.Utility;
+            IContact utility = selectedBook.Utility;
 
 
             //infinite loop until user exits
@@ -142,44 +50,151 @@ namespace BridgeLabzTraining.collections_csharp_practice.scenario_based.address_
                     //add new contact
                     case 1:
                         //if address book is full
-                        if (utility.TotalContacts == 99)
+                        if (utility.TotalContacts() == 99)
                         {
                             Console.WriteLine("\nADDRESS BOOK IS FULL");
                             return;
                         }
 
                         //take first name
-                        Console.Write("\nENTER FIRST NAME: ");
-                        string firstName = Console.ReadLine();
+                        string firstName;
+                        while (true)
+                        {
+                            try
+                            {
+                                Console.Write("ENTER FIRST NAME: ");
+                                firstName = Console.ReadLine();
+                                ContactValidation.ValidateNotEmpty(firstName, "First Name");
+                                break;
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine(ex.Message + ". Please try again.");
+                            }
+                        }
 
                         //take last name
-                        Console.Write("ENTER LAST NAME: ");
-                        string lastName = Console.ReadLine();
+                        string lastName;
+                        while (true)
+                        {
+                            try
+                            {
+                                Console.Write("ENTER LAST NAME: ");
+                                lastName = Console.ReadLine();
+                                ContactValidation.ValidateNotEmpty(lastName, "Last Name");
+                                break;
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine(ex.Message + ". Please try again.");
+                            }
+                        }
 
                         //take email
-                        Console.Write("ENTER EMAIL: ");
-                        string email = Console.ReadLine();
-                        ContactValidation.ValidateEmail(email);
+                        string email;
+                        while (true)
+                        {
+                            try
+                            {
+                                Console.Write("ENTER EMAIL: ");
+                                email = Console.ReadLine();
+                                ContactValidation.ValidateNotEmpty(email, "Email");
+                                ContactValidation.ValidateEmail(email);
+                                break;
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine(ex.Message + ". Please try again.");
+                            }
+                        }
 
                         //take city
-                        Console.Write("ENTER CITY: ");
-                        string city = Console.ReadLine();
+                        string city;
+                        while (true)
+                        {
+                            try
+                            {
+                                Console.Write("ENTER CITY: ");
+                                city = Console.ReadLine();
+                                ContactValidation.ValidateNotEmpty(city, "City");
+                                break;
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine(ex.Message + ". Please try again.");
+                            }
+                        }
 
                         //take state
-                        Console.Write("ENTER STATE: ");
-                        string state = Console.ReadLine();
+                        string state;
+                        while (true)
+                        {
+                            try
+                            {
+                                Console.Write("ENTER STATE: ");
+                                state = Console.ReadLine();
+                                ContactValidation.ValidateNotEmpty(state, "State");
+                                break;
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine(ex.Message + ". Please try again.");
+                            }
+                        }
 
                         //take zip code
-                        Console.Write("ENTER ZIP CODE: ");
-                        string zip = Console.ReadLine();
+                        string zip;
+                        while (true)
+                        {
+                            try
+                            {
+                                Console.Write("ENTER ZIP CODE: ");
+                                zip = Console.ReadLine();
+                                ContactValidation.ValidateNotEmpty(zip, "Zip Code");
+                                ContactValidation.ValidateZip(zip);
+                                break;
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine(ex.Message + ". Please try again.");
+                            }
+                        }
 
                         //take phone number
-                        Console.Write("ENTER PHONE NUMBER: ");
-                        string phoneNumber = Console.ReadLine();
+                        string phoneNumber;
+                        while (true)
+                        {
+                            try
+                            {
+                                Console.Write("ENTER PHONE NUMBER: ");
+                                phoneNumber = Console.ReadLine();
+                                ContactValidation.ValidateNotEmpty(phoneNumber, "Phone Number");
+                                ContactValidation.ValidatePhone(phoneNumber);
+                                break;
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine(ex.Message + ". Please try again.");
+                            }
+                        }
 
                         //take address
-                        Console.Write("ENTER ADDRESS: ");
-                        string address = Console.ReadLine();
+                        string address;
+                        while (true)
+                        {
+                            try
+                            {
+                                Console.Write("ENTER ADDRESS: ");
+                                address = Console.ReadLine();
+                                ContactValidation.ValidateNotEmpty(address, "Address");
+                                break;
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine(ex.Message + ". Please try again.");
+                            }
+                        }
+
 
                         //create object of Contact class
                         Contact contact = new Contact(firstName, lastName, address, city, state, zip, email, phoneNumber);
@@ -198,7 +213,7 @@ namespace BridgeLabzTraining.collections_csharp_practice.scenario_based.address_
                     //add multiple contacts
                     case 2:
                         //if address book is full
-                        if (utility.TotalContacts == 99)
+                        if (utility.TotalContacts() == 99)
                         {
                             Console.WriteLine("ADDRESS BOOK IS FULL");
                             return;
@@ -218,7 +233,7 @@ namespace BridgeLabzTraining.collections_csharp_practice.scenario_based.address_
                     //edit person contact
                     case 3:
                         //if no contact exists
-                        if (utility.TotalContacts == 0)
+                        if (utility.TotalContacts() == 0)
                         {
                             Console.WriteLine("\nNO CONTACT EXISTS");
                             break;
@@ -275,7 +290,7 @@ namespace BridgeLabzTraining.collections_csharp_practice.scenario_based.address_
 
                     //delete person contact
                     case 9:
-                        if (utility.TotalContacts == 0)
+                        if (utility.TotalContacts() == 0)
                         {
                             Console.WriteLine("\nNO CONTACT EXISTS");
                             break;
@@ -328,7 +343,7 @@ namespace BridgeLabzTraining.collections_csharp_practice.scenario_based.address_
                         Console.WriteLine("\nCONTACTS SORTED");
                         break;
 
-                    
+
                     //exit program
                     case 0:
                         Console.WriteLine("\nEXIT SUCCESSFUL");
