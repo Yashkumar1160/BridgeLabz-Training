@@ -1,0 +1,27 @@
+
+FIRST NAME: yash
+LAST NAME: kumar
+EMAIL: yk4442144@gmail.com
+CITY agra
+STATE: up
+ZIP: 869786
+PHONE NUMBER: 9999999999
+ADDRESS: agra up
+
+FIRST NAME: harsh
+LAST NAME: upadhyay
+EMAIL: harsh@gmail.com
+CITY delhi
+STATE: delhi
+ZIP: 869708
+PHONE NUMBER: 8888888888
+ADDRESS: delhi
+
+FIRST NAME: varun
+LAST NAME: kumar
+EMAIL: varun@gmail.com
+CITY mathura
+STATE: up
+ZIP: 787878
+PHONE NUMBER: 7777777777
+ADDRESS: mathura up
