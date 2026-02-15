@@ -10,12 +10,16 @@ namespace techville.menus
         //Main menu
         public static void DisplayMenu()
         {
+            ModuleMenu module = new ModuleMenu();
+
             //infinite loop until user exits
             while (true)
             {
                 //display menu
                 Console.WriteLine("\n====== TechVille Main Menu ======");
                 Console.WriteLine("1. Citizen Registration");
+                Console.WriteLine("2. Display All Citizens");
+                Console.WriteLine("3. Check Eligibility of All Citizens");
                 Console.WriteLine("0. Exit");
                 Console.Write("Enter Option: ");
 
@@ -24,13 +28,22 @@ namespace techville.menus
 
                 //handle user's choice
                 switch (choice)
-                {   
+                {
                     //citizen register
                     case 1:
-                        Module1Menu module1 = new Module1Menu();
-                        module1.Show();
+                        module.Show();
                         break;
-                    
+
+                    //display all citizens
+                    case 2:
+                        module.DisplayAll();
+                        break;
+
+                    //check eligibility
+                    case 3:
+                        module.CheckEligibility();
+                        break;
+
                     //exit
                     case 0:
                         Console.WriteLine("Exit Successful");

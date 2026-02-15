@@ -74,7 +74,7 @@ namespace techville.utilities
             while (true)
             {
                 Console.Write(message);
-                int value=int.Parse(Console.ReadLine());
+                value=int.Parse(Console.ReadLine());
                 if (value >= 0)
                 {
                     return value;                    

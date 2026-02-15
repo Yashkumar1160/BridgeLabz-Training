@@ -1,0 +1,14 @@
+C:\Users\yk444\Videos\BTECH\.NET\techville\obj\Debug\net10.0\techville.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yk444\Videos\BTECH\.NET\techville\obj\Debug\net10.0\techville.AssemblyInfoInputs.cache
+C:\Users\yk444\Videos\BTECH\.NET\techville\obj\Debug\net10.0\techville.AssemblyInfo.cs
+C:\Users\yk444\Videos\BTECH\.NET\techville\obj\Debug\net10.0\techville.csproj.CoreCompileInputs.cache
+C:\Users\yk444\Videos\BTECH\.NET\techville\bin\Debug\net10.0\techville.exe
+C:\Users\yk444\Videos\BTECH\.NET\techville\bin\Debug\net10.0\techville.deps.json
+C:\Users\yk444\Videos\BTECH\.NET\techville\bin\Debug\net10.0\techville.runtimeconfig.json
+C:\Users\yk444\Videos\BTECH\.NET\techville\bin\Debug\net10.0\techville.dll
+C:\Users\yk444\Videos\BTECH\.NET\techville\bin\Debug\net10.0\techville.pdb
+C:\Users\yk444\Videos\BTECH\.NET\techville\obj\Debug\net10.0\techville.dll
+C:\Users\yk444\Videos\BTECH\.NET\techville\obj\Debug\net10.0\refint\techville.dll
+C:\Users\yk444\Videos\BTECH\.NET\techville\obj\Debug\net10.0\techville.pdb
+C:\Users\yk444\Videos\BTECH\.NET\techville\obj\Debug\net10.0\techville.genruntimeconfig.cache
+C:\Users\yk444\Videos\BTECH\.NET\techville\obj\Debug\net10.0\ref\techville.dll

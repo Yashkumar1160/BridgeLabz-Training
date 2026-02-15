@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using techville.modules;
 using techville.utilities;
-using techville.modules.module1_citizenregistration;
 namespace techville.services
 
 {
@@ -24,15 +23,16 @@ namespace techville.services
 
             //take age input and validate it 
             int age = InputValidator.GetValidPositiveInt("Enter Age: ");
-            
+
             //take income input and validate it 
             double income = InputValidator.GetValidPositiveDouble("Enter Income: ");
-            
+
             //take years input and validate it 
             int years = InputValidator.GetValidNonNegativeInt("Enter Residency Years: ");
 
+
             //create citizen object 
-            Citizen citizen = new Citizen(name, age, income, years);
+            Citizen citizen = new Citizen(name, age, income, years, "");
 
             //add citizen
             citizens[totalCitizen++] = citizen;
@@ -85,14 +85,76 @@ namespace techville.services
             {
                 incomeScore = 5;
             }
+            int totalScore = ageScore + incomeScore + residencyScore;
+
+            AssignServicePackage(citizen, totalScore);
 
             //display results
             Console.WriteLine($"Total Score: {ageScore + incomeScore + residencyScore}");
             Console.WriteLine($"Healthcare Scheme : {(eligibleForHealthcare ? "Eligible" : "Not Eligible")}");
             Console.WriteLine($"Income Subsidy    : {(eligibleForSubsidy ? "Eligible" : "Not Eligible")}");
             Console.WriteLine($"Voting Rights     : {(eligibleForVoting ? "Eligible" : "Not Eligible")}");
-
-
         }
+
+        //method to check eligibility
+        public void CheckAllEligibility()
+        {
+            if (totalCitizen == 0)
+            {
+                Console.WriteLine("No Citizens Registered");
+                return;
+            }
+
+            for (int i = 0; i < totalCitizen; i++)
+            {
+                Console.WriteLine("\n--------------------------------");
+                Console.WriteLine("Citizen: " + citizens[i].Name);
+                CalculateEligibility(citizens[i]);
+            }
+        }
+
+        //M-2 Service Package Checker 
+        //method to assign service package
+        public void AssignServicePackage(Citizen citizen, int score)
+        {
+            //check score
+            if (score < 30)
+            {
+                citizen.ServicePackage = "Not Eligible";
+                return;
+            }
+
+            //assign package accordingly
+            if (score >= 80)
+                citizen.ServicePackage = "Platinum";
+            else if (score >= 60)
+                citizen.ServicePackage = "Gold";
+            else if (score >= 40)
+                citizen.ServicePackage = "Silver";
+            else
+                citizen.ServicePackage = "Basic";
+        }
+
+
+
+        //method to display all registered citizens
+        public void DisplayAllCitizens()
+        {
+            //if no citizen data exists
+            if (totalCitizen == 0)
+            {
+                Console.WriteLine("No Citizens Registered");
+                return;
+            }
+
+            Console.WriteLine("\n===== All Registered Citizens =====");
+
+            for (int i = 0; i < totalCitizen; i++)
+            {
+                Console.WriteLine(citizens[i]);
+            }
+        }
+
+
     }
 }
