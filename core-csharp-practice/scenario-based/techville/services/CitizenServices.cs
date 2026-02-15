@@ -12,12 +12,29 @@ namespace techville.services
         //array to store citizens
         Citizen[] citizens = new Citizen[100];
 
+        //M-3 Smart Citizen Database
+        //array to store Citizen IDs
+        int[] citizenIds = new int[1000];
+
+        //2D array to store number of citizens in each Zone & Sector
+        int[,]zoneSectorCounts = new int[5, 4];
+
+        //variable to generate unique Citizen IDs
+        int nextCitizenId = 1;
+
         //total citizen count
         int totalCitizen = 0;
 
         //M-1 Method to register citizen
         public void RegisterCitizen()
         {
+            //check if database is full
+            if (totalCitizen >= citizens.Length)
+            {
+                Console.WriteLine("Database Full");
+                return;
+            }
+
             //take name input and validate it 
             string name = InputValidator.GetValidString("Enter Name: ");
 
@@ -30,20 +47,36 @@ namespace techville.services
             //take years input and validate it 
             int years = InputValidator.GetValidNonNegativeInt("Enter Residency Years: ");
 
+            //M-3 Smart Citizen Database
+            //take zone 
+            Console.Write("Enter Zone (0-4): ");
+            int zone = int.Parse(Console.ReadLine());
+
+            //take citizen sector
+            Console.Write("Enter Sector (0-3): ");
+            int sector = int.Parse(Console.ReadLine());
 
             //create citizen object 
             Citizen citizen = new Citizen(name, age, income, years, "");
 
-            //add citizen
-            citizens[totalCitizen++] = citizen;
+            //store citizen in array
+            citizens[totalCitizen] = citizen;
+
+            //assign and store unique Citizen ID
+            citizenIds[totalCitizen] = nextCitizenId++;
+
+            //increase count for specific Zone & Sector
+            zoneSectorCounts[zone, sector]++;
+
+            //increase total citizen count
+            totalCitizen++;
 
             Console.WriteLine("Citizen Registered Successfully");
-            CalculateEligibility(citizen);
         }
 
         //M-1 Method to calculate eligibility score 
         public void CalculateEligibility(Citizen citizen)
-        {
+        {   
             //variables to store scores
             int ageScore;
             int incomeScore;
@@ -156,5 +189,58 @@ namespace techville.services
         }
 
 
+        //M-3 Method to display number of citizens in each Zone & Sector
+        public void DisplayZoneSectorData()
+        {
+            Console.WriteLine("\n===== Zone & Sector Citizen Count =====");
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Zone " + i);
+
+                for (int j = 0; j < 4; j++)
+                {
+                    Console.WriteLine("Sector " + j + " : " + zoneSectorCounts[i, j] + " citizens");
+                }
+            }
+        }
+
+        //M-3 Method to sort Citizen IDs in ascending order
+        public void SortCitizenIds()
+        {
+            //sorting  array
+            Array.Sort(citizenIds, 0, totalCitizen);
+
+            Console.WriteLine("Citizen IDs Sorted Successfully");
+        }
+
+        //M-3 Method to search citizen using ID
+        public void SearchCitizenById(int id)
+        {
+            //loop through Citizen IDs
+            for (int i = 0; i < totalCitizen; i++)
+            {
+                if (citizenIds[i] == id)
+                {
+                    Console.WriteLine("Citizen Found:");
+                    Console.WriteLine(citizens[i]);
+                    return;
+                }
+            }
+
+            //if ID not found
+            Console.WriteLine("Citizen ID Not Found");
+        }
+        //M-3 Method to create backup copy of Citizen IDs
+        public void CopyCitizenIds()
+        {
+            //array to store ids
+            int[] backupIds = new int[totalCitizen];
+
+            //copy values from original array to backup array
+            Array.Copy(citizenIds, backupIds, totalCitizen);
+
+            Console.WriteLine("Citizen IDs copied.");
+        }
     }
 }

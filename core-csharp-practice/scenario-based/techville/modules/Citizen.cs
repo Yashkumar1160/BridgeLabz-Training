@@ -7,6 +7,7 @@ namespace techville.modules
 {
     public class Citizen
     {
+        //properties
         public string Name;
         public int Age;
         public double Income;
@@ -24,6 +25,7 @@ namespace techville.modules
             ServicePackage=servicePackage;
         }
 
+        //override ToString method
         public override string ToString()
         {
             return "\nCitizen Name: "+Name+

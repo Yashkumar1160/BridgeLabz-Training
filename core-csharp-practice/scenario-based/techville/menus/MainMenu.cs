@@ -7,9 +7,10 @@ namespace techville.menus
 {
     public class MainMenu
     {
-        //Main menu
+        //Main Menu
         public static void DisplayMenu()
         {
+            //create object of Module Menu class
             ModuleMenu module = new ModuleMenu();
 
             //infinite loop until user exits
@@ -20,6 +21,11 @@ namespace techville.menus
                 Console.WriteLine("1. Citizen Registration");
                 Console.WriteLine("2. Display All Citizens");
                 Console.WriteLine("3. Check Eligibility of All Citizens");
+                //M-3 Smart Citizen Database Options
+                Console.WriteLine("4. Display Zone & Sector Data");
+                Console.WriteLine("5. Sort Citizen IDs");
+                Console.WriteLine("6. Search Citizen by ID");
+                Console.WriteLine("7. Copy Citizen IDs");
                 Console.WriteLine("0. Exit");
                 Console.Write("Enter Option: ");
 
@@ -42,6 +48,30 @@ namespace techville.menus
                     //check eligibility
                     case 3:
                         module.CheckEligibility();
+                        break;
+
+                    //M-3 Options
+                    //Display Zone & Sectors Data
+                    case 4:
+                        module.DisplayZoneData();
+                        break;  
+
+                    //Sort by Ids
+                    case 5:
+                        module.SortIds();
+                        break;
+
+                    //Search By Id
+                    case 6:
+                        //take citizen id 
+                        Console.Write("Enter Citizen ID: ");
+                        int id=int.Parse(Console.ReadLine());
+                        module.SearchById(id);
+                        break;
+
+                    //Copy Id
+                    case 7:
+                        module.Copy();
                         break;
 
                     //exit

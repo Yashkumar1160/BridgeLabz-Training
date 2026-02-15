@@ -80,7 +80,7 @@ namespace techville.utilities
                     return value;                    
                 }
 
-                Console.WriteLine("Invalid number! Enter 0 or positive integer.");
+                Console.WriteLine("Invalid number Enter 0 or positive integer.");
             }
         }
     }

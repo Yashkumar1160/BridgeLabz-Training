@@ -44,14 +44,42 @@ namespace techville.menus
             }
         }
 
+        //method to display citizens data
         public void DisplayAll()
         {
             citizenService.DisplayAllCitizens();
         }
 
-        public void CheckEligibility()
+
+        //method to check eligibility
+        public void CheckEligibility()  
         {
             citizenService.CheckAllEligibility();
         }
+
+        //M-3 method to display zone data
+        public void DisplayZoneData()
+        {
+            citizenService.DisplayZoneSectorData();
+        }
+
+        //M-3 method to sort citizen IDs
+        public void SortIds()
+        {
+            citizenService.SortCitizenIds();
+        }
+
+        //M-3 method to search citizen by ID
+        public void SearchById(int id)
+        {
+            citizenService.SearchCitizenById(id);
+        }
+
+        //M-3 method to copy Citizen IDs
+        public void Copy()
+        {
+            citizenService.CopyCitizenIds();
+        }
+
     }
 }
