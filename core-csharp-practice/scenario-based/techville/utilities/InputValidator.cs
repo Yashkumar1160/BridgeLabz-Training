@@ -36,10 +36,10 @@ namespace techville.utilities
             while (true)
             {
                 Console.Write(message);
-                value=int.Parse(Console.ReadLine());
+                value = int.Parse(Console.ReadLine());
                 if (value > 0)
                 {
-                    return value;   
+                    return value;
                 }
 
                 Console.WriteLine("Invalid number! Enter positive integer.");
@@ -55,10 +55,10 @@ namespace techville.utilities
             while (true)
             {
                 Console.Write(message);
-                value=double.Parse(Console.ReadLine());
+                value = double.Parse(Console.ReadLine());
                 if (value > 0)
                 {
-                    return value;                    
+                    return value;
                 }
 
                 Console.WriteLine("Invalid number! Enter positive number.");
@@ -74,14 +74,34 @@ namespace techville.utilities
             while (true)
             {
                 Console.Write(message);
-                value=int.Parse(Console.ReadLine());
+                value = int.Parse(Console.ReadLine());
                 if (value >= 0)
                 {
-                    return value;                    
+                    return value;
                 }
 
                 Console.WriteLine("Invalid number Enter 0 or positive integer.");
             }
         }
+
+        //M-4 Method to Format name 
+        public static string FormatName(string name)
+        {
+            name = name.Trim().ToLower();
+            return char.ToUpper(name[0]) + name.Substring(1);
+        }
+
+        //M-4 Method to Validate email format
+        public static bool IsValidEmail(string email)
+        {
+            return email.Contains("@") && email.Contains(".");
+        }
+
+        //M-4 Method to Format address 
+        public static string FormatAddress(string address)
+        {
+            return address.Trim();
+        }
+
     }
 }

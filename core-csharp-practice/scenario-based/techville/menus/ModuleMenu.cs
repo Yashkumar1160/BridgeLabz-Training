@@ -52,7 +52,7 @@ namespace techville.menus
 
 
         //method to check eligibility
-        public void CheckEligibility()  
+        public void CheckEligibility()
         {
             citizenService.CheckAllEligibility();
         }
@@ -80,6 +80,19 @@ namespace techville.menus
         {
             citizenService.CopyCitizenIds();
         }
+
+        //M-4 method to update profile
+        public void UpdateProfile(int id)
+        {
+            citizenService.UpdateCitizenProfile(id);
+        }
+
+        //M-4 method to search citizen by name
+        public void SearchByName(string name)
+        {
+            citizenService.SearchCitizenByName(name);
+        }
+
 
     }
 }

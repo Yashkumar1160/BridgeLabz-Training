@@ -17,7 +17,7 @@ namespace techville.services
         int[] citizenIds = new int[1000];
 
         //2D array to store number of citizens in each Zone & Sector
-        int[,]zoneSectorCounts = new int[5, 4];
+        int[,] zoneSectorCounts = new int[5, 4];
 
         //variable to generate unique Citizen IDs
         int nextCitizenId = 1;
@@ -72,11 +72,12 @@ namespace techville.services
             totalCitizen++;
 
             Console.WriteLine("Citizen Registered Successfully");
+            CalculateEligibility(citizen);
         }
 
         //M-1 Method to calculate eligibility score 
         public void CalculateEligibility(Citizen citizen)
-        {   
+        {
             //variables to store scores
             int ageScore;
             int incomeScore;
@@ -242,5 +243,89 @@ namespace techville.services
 
             Console.WriteLine("Citizen IDs copied.");
         }
+
+        //M-4 Method to Update Citizen Profile 
+        public void UpdateCitizenProfile(int id)
+        {
+            for (int i = 0; i < totalCitizen; i++)
+            {
+                if (citizenIds[i] == id)
+                {
+                    Citizen citizen = citizens[i];
+
+                    //take new name
+                    Console.Write("Enter New Name: ");
+                    string newName = InputValidator.FormatName(Console.ReadLine());
+
+                    //take email
+                    Console.Write("Enter Email: ");
+                    string email = Console.ReadLine();
+
+                    //check if email is valid
+                    if (!InputValidator.IsValidEmail(email))
+                    {
+                        Console.WriteLine("Invalid Email Format");
+                        return;
+                    }
+
+                    //take address
+                    Console.Write("Enter Address: ");
+                    string address = InputValidator.FormatAddress(Console.ReadLine());
+
+                    //update values
+                    citizen.Name = newName;
+                    citizen.Email = email;
+                    citizen.Address = address;
+
+                    Console.WriteLine("Profile Updated Successfully");
+
+                    //call GenerateProfileSummary method
+                    Console.WriteLine(GenerateProfileSummary(citizen));
+                    return;
+                }
+            }
+
+            Console.WriteLine("Citizen Not Found");
+        }
+        //M-4 Method for Pass by Reference Example
+        public void IncreaseResidencyYears(ref Citizen citizen)
+        {
+            citizen.ResidencyYears += 1;
+        }
+
+        //M-4 Method to Search Citizen by Name
+        public void SearchCitizenByName(string name)
+        {
+            //flag to check if citizen is found
+            bool found = false;
+
+            //loop through citizens
+            for (int i = 0; i < totalCitizen; i++)
+            {
+                //if citizen is found
+                if (citizens[i].Name.ToLower().Contains(name.ToLower()))
+                {
+                    Console.WriteLine("\nCitizen Found:");
+                    Console.WriteLine(citizens[i]);
+                    found = true;
+                }
+            }
+
+            //if citizen not found
+            if (!found)
+                Console.WriteLine("Citizen Not Found");
+        }
+
+        //M-4 Method to Generate Profile Summary 
+        public string GenerateProfileSummary(Citizen citizen)
+        {
+            return $"Profile Summary:\n" +
+                   $"Name: {citizen.Name}\n" +
+                   $"Email: {citizen.Email}\n" +
+                   $"Address: {citizen.Address}\n" +
+                   $"Service Package: {citizen.ServicePackage}";
+        }
+
+
     }
 }
