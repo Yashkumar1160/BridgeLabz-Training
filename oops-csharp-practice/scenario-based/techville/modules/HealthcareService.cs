@@ -19,6 +19,7 @@ namespace techville.modules
         //override DisplayServiceDetails method
         public override void DisplayServiceDetails()
         {
+            //M-7 Calling Parent Method
             base.DisplayServiceDetails();
             Console.WriteLine("Emergency Support: " + (emergencySupport ? "Available" : "Not Available"));
         }
