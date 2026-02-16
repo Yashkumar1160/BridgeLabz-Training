@@ -8,8 +8,8 @@ using BridgeLabzTraining.dbms_csharp_practice.scenario_based.healthcare_app.appo
 using BridgeLabzTraining.dbms_csharp_practice.scenario_based.healthcare_app.visit_management;
 using BridgeLabzTraining.dbms_csharp_practice.scenario_based.healthcare_app.billing;
 using BridgeLabzTraining.dbms_csharp_practice.scenario_based.healthcare_app.specialty;
-
-
+using BridgeLabzTraining.dbms_csharp_practice.scenario_based.healthcare_app.backup;
+using BridgeLabzTraining.dbms_csharp_practice.scenario_based.healthcare_app.auditlogs;
 
 namespace BridgeLabzTraining.dbms_csharp_practice.scenario_based.healthcare_app
 {
@@ -27,8 +27,9 @@ namespace BridgeLabzTraining.dbms_csharp_practice.scenario_based.healthcare_app
                 Console.WriteLine("3. Appointment Management");
                 Console.WriteLine("4. Visit Management");
                 Console.WriteLine("5. Billing Management");
-                Console.WriteLine("6. Specialty Management");
-                Console.WriteLine("7. Exit");
+                Console.WriteLine("7. Backup Database (Admin)");
+                Console.WriteLine("8. View System Audit Logs");
+                Console.WriteLine("9. Exit");
                 Console.Write("Enter Choice: ");
 
                 //take user's choice
@@ -47,35 +48,43 @@ namespace BridgeLabzTraining.dbms_csharp_practice.scenario_based.healthcare_app
                     case 2:
                         DoctorMenu.DisplayMenu();
                         break;
-                    
+
                     //display appointment management menu
                     case 3:
                         AppointmentMenu.DisplayMenu();
                         break;
-                    
+
                     //display Visit management menu
                     case 4:
                         VisitMenu.DisplayMenu();
                         break;
-                    
+
                     //display billing management menu
                     case 5:
                         BillingMenu.DisplayMenu();
                         break;
-                    
+
                     //display specialty management menu
                     case 6:
                         SpecialtyMenu.DisplayMenu();
                         break;
-                    
-                    //exit
+
+                    //backup database
                     case 7:
-                    Console.WriteLine("Exit Successful");
+                        BackupDatabase.TriggerBackup();
+                        break;
+
+                    //audit log viewer
+                    case 8:
+                        AuditLogViewer.ViewAuditLogs();
+                        break;
+                    case 9:
+                        Console.WriteLine("Exit Successful");
                         return;
 
                     default:
-                    Console.WriteLine("Invalid Input");
-                    break;
+                        Console.WriteLine("Invalid Input");
+                        break;
                 }
             }
         }
