@@ -29,8 +29,9 @@ namespace techville.menus
                 //M-4 Citizen Profile Management
                 Console.WriteLine("8. Update Citizen Profile");
                 Console.WriteLine("9. Search Citizen by Name");
-                //M-6 City Services Framework
-                Console.WriteLine("10. Class Vs Object Demonstration");
+                //M-6 City Services Framework 
+                //M-7 Advanced Service Architecture
+                Console.WriteLine("10. Services Menu");
                 Console.WriteLine("0. Exit");
                 Console.Write("Enter Option: ");
 
@@ -95,17 +96,7 @@ namespace techville.menus
 
                     //Class vs Object demonstration
                     case 10:
-                        HealthcareService health1 = new HealthcareService(5000, true);
-                        HealthcareService health2 = new HealthcareService(3000, false);
-
-                        EducationService edu1 = new EducationService(8000, 10);
-
-                        Console.WriteLine("\n=== Service Demonstration ===");
-                        health1.DisplayServiceDetails();
-                        Console.WriteLine();
-                        health2.DisplayServiceDetails();
-                        Console.WriteLine();
-                        edu1.DisplayServiceDetails();
+                        ServicesMenu.ShowServicesMenu();
                         break;
 
                     //exit
