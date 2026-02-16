@@ -5,11 +5,19 @@ using System.Threading.Tasks;
 using techville.exceptions;
 using techville.modules;
 using techville.utilities;
-namespace techville.services
+using techville.datastructures;
 
+namespace techville.services
 {
     public class CitizenServices
     {
+        //M-10 Citizen Network System
+        SinglyLinkedList queueList = new SinglyLinkedList();
+        //M-10 Citizen Network System
+        DoublyLinkedList profileList = new DoublyLinkedList();
+        //M-10 Citizen Network System
+        CircularLinkedList roundRobinList = new CircularLinkedList();
+
         //array to store citizens
         Citizen[] citizens = new Citizen[100];
 
@@ -76,6 +84,11 @@ namespace techville.services
                 //store citizen in array
                 citizens[totalCitizen] = citizen;
 
+                //M-10 Citizen Network System
+                AddToQueue(citizen);
+                AddToProfiles(citizen);
+                AddToRoundRobin(citizen);
+
                 //assign and store unique Citizen ID
                 citizenIds[totalCitizen] = nextCitizenId++;
 
@@ -89,13 +102,13 @@ namespace techville.services
                 CalculateEligibility(citizen);
             }
             //catch blocks
-            catch(DuplicateCitizenException ex)
+            catch (DuplicateCitizenException ex)
             {
                 Console.WriteLine("Duplicate Error: " + ex.Message);
             }
-            catch(DatabaseFullException ex)
+            catch (DatabaseFullException ex)
             {
-                Console.WriteLine("Database Full Exception: "+ex.Message);
+                Console.WriteLine("Database Full Exception: " + ex.Message);
             }
             catch (Exception ex)
             {
@@ -342,10 +355,53 @@ namespace techville.services
         public string GenerateProfileSummary(Citizen citizen)
         {
             return $"Profile Summary:\n" +
-                   $"Name: {citizen.Name}\n" +
-                   $"Email: {citizen.Email}\n" +
-                   $"Address: {citizen.Address}\n" +
-                   $"Service Package: {citizen.ServicePackage}";
+                $"Name: {citizen.Name}\n" +
+                $"Email: {citizen.Email}\n" +
+                $"Address: {citizen.Address}\n" +
+                $"Service Package: {citizen.ServicePackage}";
+        }
+
+
+        //M-10 method to add citizen to queue
+        public void AddToQueue(Citizen citizen)
+        {
+            queueList.Insert(citizen);
+        }
+
+        //M-10 method to show queue
+        public void ShowQueue()
+        {
+            queueList.Display();
+        }
+
+        //M-10 method to add to profile navigation
+        public void AddToProfiles(Citizen citizen)
+        {
+            profileList.Insert(citizen);
+        }
+
+        //M-10 method to show profiles forward
+        public void ShowProfilesForward()
+        {
+            profileList.DisplayForward();
+        }
+
+        //M-10 method to  show profiles backward
+        public void ShowProfilesBackward()
+        {
+            profileList.DisplayBackward();
+        }
+
+        //M-10 method to  add to circular list
+        public void AddToRoundRobin(Citizen citizen)
+        {
+            roundRobinList.Insert(citizen);
+        }
+
+        //M-10 method to show round robin
+        public void ShowRoundRobin()
+        {
+            roundRobinList.Display(10);
         }
 
 
