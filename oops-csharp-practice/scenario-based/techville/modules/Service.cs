@@ -12,6 +12,9 @@ namespace techville.modules
         protected string serviceName;
         protected double serviceCost;
 
+        //M-8 City Service Hierarchy
+        protected string status;
+
         //static variable 
         public static string CityName = "TechVille";
 
@@ -30,6 +33,8 @@ namespace techville.modules
             //M-7 Advanced Service Architecture
             usageCount = 0;
             TotalServices++;
+            //M-8 City Service Hierarchy
+            status = "Not Registered";
         }
 
         //M-7 Method to use Service
@@ -52,6 +57,65 @@ namespace techville.modules
         {
             Console.WriteLine("Total Services Created: " + TotalServices);
         }
+
+
+        //method to Register
+        public virtual void Register()
+        {
+            status = "Registered";
+            Console.WriteLine(serviceName + " registered successfully.");
+        }
+
+        //method to Cancel
+        public virtual void Cancel()
+        {
+            status = "Cancelled";
+            Console.WriteLine(serviceName + " cancelled.");
+        }
+
+        //method to Check Status
+        public void CheckStatus()
+        {
+            Console.WriteLine("Current Status: " + status);
+        }
+
+        //method to book service
+        public void BookService(string citizenName)
+        {
+            Console.WriteLine(serviceName + " booked by " + citizenName);
+        }
+
+        //M-8 Method overloading
+        public void BookService(string citizenName, int priority)
+        {
+            Console.WriteLine(serviceName + " booked by " + citizenName +
+                              " with priority " + priority);
+        }
+
+
+        //M-8 Method overriding
+        public override string ToString()
+        {
+            return $"Service: {serviceName}, Cost: {serviceCost}, Status: {status}";
+        }
+
+        //override Equals method
+        public override bool Equals(object obj)
+        {
+            Service other = obj as Service;
+
+            if (other == null)
+                return false;
+
+            return this.serviceName == other.serviceName;
+        }
+
+        //override GetHashCode method
+        public override int GetHashCode()
+        {
+            return serviceName.GetHashCode();
+        }
+
 
     }
 }
