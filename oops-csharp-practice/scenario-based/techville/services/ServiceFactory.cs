@@ -23,9 +23,19 @@ namespace techville.services
                 return new EducationService(8000, 10);
             }
             //premium healthcare service
-            else if (type.ToLower() == "premiumhealthcare")
+            else if (type.ToLower() == "premium")
             {
                 return new PremiumHealthcareService(10000, true, true);
+            }
+            //routine service
+            else if (type.ToLower() == "routine")
+            {
+                return new RoutineService(2000);
+            }
+            //emergency service
+            else if (type.ToLower() == "emergency")
+            {
+                return new EmergencyService (5000);
             }
             else
             {
