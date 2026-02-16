@@ -18,7 +18,12 @@ namespace techville.menus
                 //diaplay menu
                 Console.WriteLine("\n===== Citizen Registration =====");
                 Console.WriteLine("1. Register Citizen");
-                Console.WriteLine("2. Back to Main Menu");
+                //M-10 Citizen Network System
+                Console.WriteLine("2. Show Queue");
+                Console.WriteLine("3. Show Profiles Forward");
+                Console.WriteLine("4. Show Profiles Backward");
+                Console.WriteLine("5. Show Round Robin");
+                Console.WriteLine("0. Back to Main Menu");
                 Console.Write("Select Option: ");
 
 
@@ -33,12 +38,29 @@ namespace techville.menus
                         citizenService.RegisterCitizen();
                         break;
 
+                    //show queue
                     case 2:
+                        citizenService.ShowQueue();
+                        break;
+                    //show profiles forward
+                    case 3:
+                        citizenService.ShowProfilesForward();
+                        break;
+                    //show profiles backward
+                    case 4:
+                        citizenService.ShowProfilesBackward();
+                        break;
+                    //show round robin
+                    case 5:
+                        citizenService.ShowRoundRobin();
+                        break;
+                    //return to main menu
+                    case 0:
                         return;
 
                     //invalid choice
                     default:
-                        Console.WriteLine("Invalid choice! Try again.");
+                        Console.WriteLine("Invalid Choice. Try again.");
                         break;
                 }
             }
