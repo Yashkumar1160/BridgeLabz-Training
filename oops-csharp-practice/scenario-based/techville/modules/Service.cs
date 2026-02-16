@@ -2,11 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using techville.interfaces;
 namespace techville.modules
 {
     //M-6 City Services Framework
-    public class Service
+    //M-9 Flexible Service Contracts(added IService Interface and Abstract class)
+    public abstract class Service : IService
     {
         //Protected Fields
         protected string serviceName;
@@ -50,6 +51,7 @@ namespace techville.modules
             Console.WriteLine($"Service: {serviceName}");
             Console.WriteLine($"Cost: {serviceCost}");
             Console.WriteLine($"City: {CityName}");
+            Console.WriteLine($"Status: {status}");
         }
 
         //method to display total services
@@ -59,19 +61,11 @@ namespace techville.modules
         }
 
 
-        //method to Register
-        public virtual void Register()
-        {
-            status = "Registered";
-            Console.WriteLine(serviceName + " registered successfully.");
-        }
-
-        //method to Cancel
-        public virtual void Cancel()
-        {
-            status = "Cancelled";
-            Console.WriteLine(serviceName + " cancelled.");
-        }
+        //M-9 abstract method to Register
+        public abstract void Register();
+        //M-9 abstract method to cancel
+        public abstract void Cancel();
+        
 
         //method to Check Status
         public void CheckStatus()

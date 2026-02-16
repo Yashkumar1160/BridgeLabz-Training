@@ -9,15 +9,27 @@ namespace techville.modules
     public class EmergencyService : Service
     {
         //constructor
-        public EmergencyService(double cost): base("Emergency Service", cost)
+        public EmergencyService(double cost) : base("Emergency Service", cost)
         {
         }
 
         //override Register method
         public override void Register()
         {
-            status = "Emergency";
-            Console.WriteLine("Emergency service is Available");
+            status = "Registered";
+            Console.WriteLine($"{serviceName} service registered");
+        }
+
+        //override Cancel method
+        public override void Cancel()
+        {
+            status = "Cancelled";
+            Console.WriteLine($"{serviceName} service cancelled");
+        }
+
+        public override void DisplayServiceDetails()
+        {
+            base.DisplayServiceDetails();
         }
     }
 }

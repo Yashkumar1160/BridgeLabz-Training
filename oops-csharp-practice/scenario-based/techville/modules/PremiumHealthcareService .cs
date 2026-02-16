@@ -12,7 +12,23 @@ namespace techville.modules
         //Constructor
         public PremiumHealthcareService(double cost, bool emergency, bool freeAmbulance) : base(cost, emergency)
         {
+            serviceName = "Premium Healthcare";
             this.freeAmbulance = freeAmbulance;
+        }
+
+        //override Register method
+        public override void Register()
+        {
+            status = "Registered";
+            Console.WriteLine($"{serviceName} service registered");
+        }
+
+
+        //override Cancel method
+        public override void Cancel()
+        {
+            status = "Cancelled";
+            Console.WriteLine($"{serviceName} service cancelled");
         }
 
         //override DisplayServiceDetails method
