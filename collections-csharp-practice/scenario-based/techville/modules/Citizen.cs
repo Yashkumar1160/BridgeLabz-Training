@@ -5,20 +5,17 @@ using System.Threading.Tasks;
 
 namespace techville.modules
 {
+    //M-6 City Services Framework
     public class Citizen
     {
-        //Fields
-        public string Name;
-        public int Age;
-        public double Income;
-        public int ResidencyYears;
-        //M-4 Profile Fields
-        public string Email;
-        public string Address;
-
-
-        //M-2 Service Eligibility Checker
-        public string ServicePackage;
+        //Private fields
+        private string name;
+        private int age;
+        private double income;
+        private int residencyYears;
+        private string email;
+        private string address;
+        private string servicePackage;
         public Citizen(string name, int age, double income, int residencyYears, string servicePackage)
         {
             Name = name;
@@ -26,6 +23,29 @@ namespace techville.modules
             Income = income;
             ResidencyYears = residencyYears;
             ServicePackage = servicePackage;
+            Email = "";
+            Address = "";
+        }
+
+        // Public Properties (Getters & Setters)
+        public string Name{ get; set; }
+
+        public int Age{ get; set; }
+
+        public double Income{ get; set; }
+
+        public int ResidencyYears{ get; set; }
+
+        public string Email{ get; set; }
+
+        public string Address{ get; set; }
+
+        public string ServicePackage{ get; set; }
+
+        //method to display basic info
+        public void DisplayBasicInfo()
+        {
+            Console.WriteLine($"Name: {name}, Age: {age}");
         }
 
         //override ToString method
@@ -35,8 +55,9 @@ namespace techville.modules
             "\nAge: " + Age +
             "\nIncome: " + Income +
             "\nResidency Years: " + ResidencyYears +
+            "\nEmail: " + Email +
+            "\nAddress: " + Address +
             "\nService Package: " + ServicePackage;
-            ;
         }
 
     }
