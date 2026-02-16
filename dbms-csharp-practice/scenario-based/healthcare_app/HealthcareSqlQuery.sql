@@ -847,6 +847,145 @@ END;
 GO
 
 
+--UC-6.2->Database Backup
+-- 1. Create Backup Tables (only if they don't exist)
+IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'patients_backup')
+BEGIN
+    SELECT * INTO patients_backup FROM patients WHERE 1 = 0; -- Empty structure
+END
+
+IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'doctors_backup')
+BEGIN
+    SELECT * INTO doctors_backup FROM doctors WHERE 1 = 0;
+END
+
+IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'appointments_backup')
+BEGIN
+    SELECT * INTO appointments_backup FROM appointments WHERE 1 = 0;
+END
+
+IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'visits_backup')
+BEGIN
+    SELECT * INTO visits_backup FROM visits WHERE 1 = 0;
+END
+
+IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'bills_backup')
+BEGIN
+    SELECT * INTO bills_backup FROM bills WHERE 1 = 0;
+END
+
+-- 2. Create Stored Procedure to backup tables
+GO
+CREATE OR ALTER PROCEDURE BackupCriticalTables
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- ===== Patients =====
+    TRUNCATE TABLE patients_backup;
+    SET IDENTITY_INSERT patients_backup ON;
+    INSERT INTO patients_backup (patient_id, name, dob, phone, email, address, blood_group)
+    SELECT patient_id, name, dob, phone, email, address, blood_group
+    FROM patients;
+    SET IDENTITY_INSERT patients_backup OFF;
+
+    -- ===== Doctors =====
+    TRUNCATE TABLE doctors_backup;
+    SET IDENTITY_INSERT doctors_backup ON;
+    INSERT INTO doctors_backup (doctor_id, name, specialty_id, contact, consultation_fee, is_active)
+    SELECT doctor_id, name, specialty_id, contact, consultation_fee, is_active
+    FROM doctors;
+    SET IDENTITY_INSERT doctors_backup OFF;
+
+    -- ===== Appointments =====
+    TRUNCATE TABLE appointments_backup;
+    SET IDENTITY_INSERT appointments_backup ON;
+    INSERT INTO appointments_backup (appointment_id, patient_id, doctor_id, appointment_date, appointment_time, status)
+    SELECT appointment_id, patient_id, doctor_id, appointment_date, appointment_time, status
+    FROM appointments;
+    SET IDENTITY_INSERT appointments_backup OFF;
+
+    -- ===== Visits =====
+    TRUNCATE TABLE visits_backup;
+    SET IDENTITY_INSERT visits_backup ON;
+    INSERT INTO visits_backup (visit_id, appointment_id, patient_id, doctor_id, diagnosis, notes)
+    SELECT visit_id, appointment_id, patient_id, doctor_id, diagnosis, notes
+    FROM visits;
+    SET IDENTITY_INSERT visits_backup OFF;
+
+    -- ===== Bills =====
+    TRUNCATE TABLE bills_backup;
+    SET IDENTITY_INSERT bills_backup ON;
+    INSERT INTO bills_backup (bill_id, visit_id, total_amount, payment_status)
+    SELECT bill_id, visit_id, total_amount, payment_status
+    FROM bills;
+    SET IDENTITY_INSERT bills_backup OFF;
+    PRINT 'Backup completed at ' + CONVERT(VARCHAR, GETDATE(), 120);
+END;
+GO
+
+
+--UC-6.3->View System Audit Logs
+CREATE TABLE system_audit_log (
+    audit_id INT IDENTITY(1,1) PRIMARY KEY,
+    table_name VARCHAR(50),
+    record_id INT,
+    action VARCHAR(20),
+    user_name VARCHAR(50),
+    action_date DATETIME DEFAULT GETDATE()
+);
+
+
+-- Trigger to log patient table changes
+GO
+CREATE OR ALTER TRIGGER trg_PatientAudit
+ON patients
+AFTER INSERT, UPDATE, DELETE
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @user NVARCHAR(50) = SYSTEM_USER; -- Or pass via session variable
+
+    -- INSERT
+    INSERT INTO system_audit_log (table_name, record_id, action, user_name)
+    SELECT 'patients', i.patient_id, 'INSERTED', @user
+    FROM inserted i
+    WHERE NOT EXISTS (SELECT 1 FROM deleted d WHERE d.patient_id = i.patient_id);
+
+    -- UPDATE
+    INSERT INTO system_audit_log (table_name, record_id, action, user_name)
+    SELECT 'patients', i.patient_id, 'UPDATED', @user
+    FROM inserted i
+    JOIN deleted d ON i.patient_id = d.patient_id;
+
+    -- DELETE
+    INSERT INTO system_audit_log (table_name, record_id, action, user_name)
+    SELECT 'patients', d.patient_id, 'DELETED', @user
+    FROM deleted d
+    WHERE NOT EXISTS (SELECT 1 FROM inserted i WHERE i.patient_id = d.patient_id);
+END;
+
+--View Audit Logs 
+GO
+CREATE OR ALTER PROCEDURE ViewAuditLogs
+    @table_name VARCHAR(50) = NULL,
+    @user_name VARCHAR(50) = NULL,
+    @from_date DATETIME = NULL,
+    @to_date DATETIME = NULL
+AS
+BEGIN
+    SELECT *
+    FROM system_audit_log
+    WHERE (@table_name IS NULL OR table_name = @table_name)
+      AND (@user_name IS NULL OR user_name = @user_name)
+      AND (@from_date IS NULL OR action_date >= @from_date)
+      AND (@to_date IS NULL OR action_date <= @to_date)
+    ORDER BY action_date DESC;
+END;
+GO
+
+
 
 /* Appointment audit trigger */
 GO
