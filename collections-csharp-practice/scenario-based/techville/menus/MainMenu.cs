@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using techville.modules;
 namespace techville.menus
 {
     public class MainMenu
@@ -29,6 +29,9 @@ namespace techville.menus
                 //M-4 Citizen Profile Management
                 Console.WriteLine("8. Update Citizen Profile");
                 Console.WriteLine("9. Search Citizen by Name");
+                //M-6 City Services Framework 
+                //M-7 Advanced Service Architecture
+                Console.WriteLine("10. Services Menu");
                 Console.WriteLine("0. Exit");
                 Console.Write("Enter Option: ");
 
@@ -91,6 +94,11 @@ namespace techville.menus
                         module.SearchByName(searchName);
                         break;
 
+                    //Class vs Object demonstration
+                    case 10:
+                        ServicesMenu.ShowServicesMenu();
+                        break;
+                    
                     //exit
                     case 0:
                         Console.WriteLine("Exit Successful");
