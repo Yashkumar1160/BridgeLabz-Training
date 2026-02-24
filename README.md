@@ -701,6 +701,139 @@
 - **FlipKey**
 
 ---
+## 📅 Day 33: Multithreading & Design Principles
 
+* Learned **Threads**, concurrency, and execution flow
+* Applied **Design Patterns** and clean code principles
+* Scenario: Factory Robot Hazard – assessed safety using arm pressure, worker density, machine state
+* Practiced logical decision-making with real inputs
+
+---
+
+## 📅 Day 34: DBMS Basics & SQL Setup
+
+* Learned **SQL commands** (DDL, DML, DCL, TCL)
+* Setup **MS SQL Server** and created databases
+* Practiced:
+  * Creating tables
+  * Inserting, updating, deleting records
+  * Running basic queries
+* Outcome: Hands-on SQL experience, confident with MS SQL Server
+
+---
+
+## 📅 Day 35: Advanced SQL – Stored Procedures & Triggers
+
+* Learned **parameterized stored procedures** and CRUD operations
+* Implemented **triggers** for data integrity
+* Designed tables and applied SQL logic
+* Outcome: Improved backend skills for Health Clinic database
+
+---
+## 📅 Day 36: Health Clinic DB Refinement
+
+* Refined tables and relationships
+* Optimized queries
+* Strengthened stored procedures and triggers
+* Key Takeaways:
+  * Proper DB design impacts performance
+  * Procedures centralize business logic
+  * Triggers enforce automatic rules
+* Outcome: Stronger backend; ready for C# integration
+
+---
+
+## 📅 Day 37: ADO.NET Basics & SQL Integration
+
+* Learned **ADO.NET components**: `SqlConnection`, `SqlCommand`, `SqlDataReader`, `ExecuteNonQuery()`
+* Connected **C# console app** to Health Clinic DB
+* Executed stored procedures: insert and view patient records
+* Key Takeaways:
+  * ADO.NET enables C#–SQL communication
+  * Proper connection handling is critical
+* Outcome: Integrated SQL with C#; strengthened full-stack backend skills
+
+---
+
+## 📅 Day 38: CRUD Operations & ADO.NET Enhancement
+
+* Enhanced CRUD operations: search, update, delete patients
+* Tested database consistency and edge cases
+* Key Takeaways:
+  * Separation of DB and app logic improves maintainability
+  * Proper query handling prevents runtime errors
+* Outcome: Stable Health Clinic backend; confident in C# + SQL integration
+
+---
+
+## 📅 Day 39: Mock Assessment
+
+* Tested overall knowledge across:
+  * C# fundamentals, OOP
+  * Data Structures & Algorithms
+  * Sorting/Searching, Regex, Reflection
+  * MSTest, SQL + C# integration
+* Outcome: Identified strengths and weak areas; improved confidence in real-world problem solving
+
+---
+
+## 📅 Day 40: Advanced ADO.NET Integration
+
+* Enhanced CRUD operations and stored procedure integration
+* Structured DB interaction logic from C#
+* Key Takeaways:
+  * Parameterized queries improve security
+  * Separation of logic improves maintainability
+* Outcome: Stronger Health Clinic backend; improved C#–SQL integration
+
+---
+
+## 📅 Day 41: Database Handling & Query Refinement
+
+* Refined DB handling and queries
+* Tested multiple user flows and improved parameter handling
+* Key Takeaways:
+  * Structured DB calls and proper parameters ensure stability and security
+* Outcome: Reliable C#–SQL integrated system
+
+---
+
+## 📅 Day 42: Revision of Core Concepts
+
+* Revised **C#**, **OOP**, **DSA**, **SQL**, and **ADO.NET**
+* Key Takeaways:
+  * Revision strengthens fundamentals and problem-solving
+  * Reinforces system-level understanding
+* Outcome: Reinforced technical foundation; identified weak areas
+
+---
+
+## 📅 Day 44: ADO.NET Connection & Configuration
+
+* Explored connection strings, SqlCommand, and execution methods:
+  * `ExecuteNonQuery()`, `ExecuteReader()`, `ExecuteScalar()`
+* Key Takeaways:
+  * Proper connection handling and structure improve maintainability
+* Outcome: Stronger understanding of ADO.NET backend integration
+
+---
+
+## 📅 Day 45: ASP.NET Introduction & Project Structure
+
+* Learned **project layers**: Controllers, Models, Program/Startup
+* Studied **HTTP request/response flow** and routing
+* Key Takeaways:
+  * Layered architecture and logic separation are key
+* Outcome: Started ASP.NET journey; clear understanding of project structure; ready for web APIs
+
+---
+
+## 📅 Day 46: ASP.NET – Project Implementation
+
+* Explored controllers, models, request flow, and project setup
+* Key Takeaways:
+  * Layered architecture improves maintainability
+  * Clear folder hierarchy is important
+* Outcome: Ready to implement web APIs and unit conversion logic
 
 ✅ **Status:** Actively progressing with strong focus on OOP, Data Structures, and real-world C# problem solving.
