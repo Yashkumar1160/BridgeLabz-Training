@@ -1,0 +1,151 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "5.0.0.0",
+        "fileVersion": "5.0.0-2.25612.105 (44525024)",
+        "semanticVersion": "5.0.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "S2701",
+          "level": "warning",
+          "message": "Remove or correct this assertion.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/yk444/Videos/BTECH/.NET/BridgeLabzTraining/BridgeLabzTraining/io-programming-csharp-practice/scenario-based/address-book/AddressBook.Tests/AddressBookUtilityTests.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 9,
+                  "endLine": 25,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3431",
+          "level": "warning",
+          "message": "Replace the 'ExpectedException' attribute with a throw assertion or a try/catch block.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/yk444/Videos/BTECH/.NET/BridgeLabzTraining/BridgeLabzTraining/io-programming-csharp-practice/scenario-based/address-book/AddressBook.Tests/AddressBookUtilityTests.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 6,
+                  "endLine": 30,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3431",
+          "level": "warning",
+          "message": "Replace the 'ExpectedException' attribute with a throw assertion or a try/catch block.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/yk444/Videos/BTECH/.NET/BridgeLabzTraining/BridgeLabzTraining/io-programming-csharp-practice/scenario-based/address-book/AddressBook.Tests/ContactsUtilityTests.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 6,
+                  "endLine": 34,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'CreateContact' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/yk444/Videos/BTECH/.NET/BridgeLabzTraining/BridgeLabzTraining/io-programming-csharp-practice/scenario-based/address-book/AddressBook.Tests/ContactsUtilityTests.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 21,
+                  "endLine": 18,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1822": {
+          "id": "CA1822",
+          "shortDescription": "Mark members as static",
+          "fullDescription": "Members that do not access instance data or call instance methods can be marked as static. After you mark the methods as static, the compiler will emit nonvirtual call sites to these members. This can give you a measurable performance gain for performance-sensitive code.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "S2701": {
+          "id": "S2701",
+          "shortDescription": "Literal boolean values should not be used in assertions",
+          "fullDescription": "Using literal boolean values in assertions can lead to less readable and less informative unit tests. When a test fails, it’s important to have a clear understanding of what the test was checking and why it failed. Most of the testing frameworks provide more explicit assertion methods that will provide a more helpful error message if the test fails.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2701",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3431": {
+          "id": "S3431",
+          "shortDescription": "\"[ExpectedException]\" should not be used",
+          "fullDescription": "It should be clear to a casual reader what code a test is testing and what results are expected. Unfortunately, that’s not usually the case with the ExpectedException attribute since an exception could be thrown from almost any line in the method.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3431",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

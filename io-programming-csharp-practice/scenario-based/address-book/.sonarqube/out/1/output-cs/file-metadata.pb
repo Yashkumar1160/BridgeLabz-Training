@@ -1,0 +1,5 @@
+Í
+ÁC:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookApp\obj\Debug\net10.0\AddressBookApp.AssemblyInfo.csutf-8Þ
+ÒC:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookApp\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.csutf-8Ï
+ÃC:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookApp\obj\Debug\net10.0\AddressBookApp.GlobalUsings.g.csutf-8­
+£C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookApp\AddressBookMain.csutf-8

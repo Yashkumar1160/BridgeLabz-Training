@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>AddressBookClassLibrary</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>a128770b-ddb5-9704-bf97-8702d4c61f63</ProjectGuid>
+  <FullPath>C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\AddressBookClassLibrary\AddressBookClassLibrary.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResultFiles>
+    <AnalysisResultFile Id="FilesToAnalyze" Location="C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\.sonarqube\conf\3\FilesToAnalyze.txt" />
+  </AnalysisResultFiles>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\.sonarqube\out\3\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\.sonarqube\out\3</Property>
+    <Property Name="sonar.cs.scanner.telemetry">C:\Users\yk444\Videos\BTECH\.NET\BridgeLabzTraining\BridgeLabzTraining\io-programming-csharp-practice\scenario-based\address-book\.sonarqube\out\3\Telemetry.json</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>net10.0</TargetFramework>
+</ProjectInfo>

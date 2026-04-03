@@ -1,0 +1,35 @@
+[
+  {
+    "match_id": 201,
+    "team1": "Mumbai ***",
+    "team2": "Chennai *** Kings",
+    "score": {
+      "Mumbai ***": 178,
+      "Chennai *** Kings": 182
+    },
+    "winner": "Chennai *** Kings",
+    "player_of_match": "REDACTED"
+  },
+  {
+    "match_id": 202,
+    "team1": "Royal *** Bangalore",
+    "team2": "Delhi ***",
+    "score": {
+      "Royal *** Bangalore": 200,
+      "Delhi ***": 190
+    },
+    "winner": "Royal *** Bangalore",
+    "player_of_match": "REDACTED"
+  },
+  {
+    "match_id": 203,
+    "team1": "Kolkata *** Riders",
+    "team2": "Sunrisers ***",
+    "score": {
+      "Kolkata *** Riders": 165,
+      "Sunrisers ***": 160
+    },
+    "winner": "Kolkata *** Riders",
+    "player_of_match": "REDACTED"
+  }
+]

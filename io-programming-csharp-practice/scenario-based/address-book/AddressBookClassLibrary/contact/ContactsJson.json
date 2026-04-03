@@ -1,0 +1,32 @@
+[
+  {
+    "FirstName": "yash",
+    "LastName": "kumar",
+    "Address": "agra up",
+    "City": "agra",
+    "State": "up",
+    "Zip": "869786",
+    "Email": "yk4442144@gmail.com",
+    "PhoneNumber": "9999999999"
+  },
+  {
+    "FirstName": "harsh",
+    "LastName": "upadhyay",
+    "Address": "delhi",
+    "City": "delhi",
+    "State": "delhi",
+    "Zip": "869708",
+    "Email": "harsh@gmail.com",
+    "PhoneNumber": "8888888888"
+  },
+  {
+    "FirstName": "varun",
+    "LastName": "kumar",
+    "Address": "mathura up",
+    "City": "mathura",
+    "State": "up",
+    "Zip": "787878",
+    "Email": "varun@gmail.com",
+    "PhoneNumber": "7777777777"
+  }
+]

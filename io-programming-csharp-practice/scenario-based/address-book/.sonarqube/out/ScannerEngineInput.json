@@ -1,0 +1,176 @@
+{
+  "scannerProperties": [
+    {
+      "key": "sonar.scanner.app",
+      "value": "ScannerMSBuild"
+    },
+    {
+      "key": "sonar.scanner.appVersion",
+      "value": "11.1"
+    },
+    {
+      "key": "sonar.scanner.bootstrapStartTime",
+      "value": "1770629236000"
+    },
+    {
+      "key": "sonar.projectKey",
+      "value": "AddressBookProject"
+    },
+    {
+      "key": "sonar.working.directory",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\.sonar"
+    },
+    {
+      "key": "sonar.projectBaseDir",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book"
+    },
+    {
+      "key": "sonar.pullrequest.cache.basepath",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book"
+    },
+    {
+      "key": "sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "sonar.modules",
+      "value": "A128770B-DDB5-9704-BF97-8702D4C61F63,AC49936E-C4EA-7915-9895-DA697393C9FB,8952D532-9843-3FE0-CF88-C1333BB934CB"
+    },
+    {
+      "key": "A128770B-DDB5-9704-BF97-8702D4C61F63.sonar.projectKey",
+      "value": "AddressBookProject:A128770B-DDB5-9704-BF97-8702D4C61F63"
+    },
+    {
+      "key": "A128770B-DDB5-9704-BF97-8702D4C61F63.sonar.projectName",
+      "value": "AddressBookClassLibrary"
+    },
+    {
+      "key": "A128770B-DDB5-9704-BF97-8702D4C61F63.sonar.projectBaseDir",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary"
+    },
+    {
+      "key": "A128770B-DDB5-9704-BF97-8702D4C61F63.sonar.working.directory",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\.sonar\\mod0"
+    },
+    {
+      "key": "A128770B-DDB5-9704-BF97-8702D4C61F63.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "A128770B-DDB5-9704-BF97-8702D4C61F63.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "A128770B-DDB5-9704-BF97-8702D4C61F63.sonar.sources",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\addressbookfolder\\AddressBook.cs,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\addressbookfolder\\AddressBookExceptions.cs,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\addressbookfolder\\AddressBookMenu.cs,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\addressbookfolder\\AddressBookUtilityImpl.cs,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\addressbookfolder\\IAddressBook.cs,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\contact\\Contact.cs,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\contact\\ContactException.cs,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\contact\\ContactMenu.cs,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\contact\\ContactsUtilityImpl.cs,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\contact\\ContactValidation.cs,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\contact\\DisplayFieldAttribute.cs,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\contact\\FileIOUtility.cs,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\contact\\IContact.cs,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\contact\\ContactsCsv.csv,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\contact\\ContactsJson.json,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\contact\\ContactsText.txt,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\obj\\AddressBookClassLibrary.csproj.nuget.dgspec.json,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\obj\\project.assets.json,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookClassLibrary\\bin\\Debug\\net10.0\\AddressBookClassLibrary.deps.json"
+    },
+    {
+      "key": "A128770B-DDB5-9704-BF97-8702D4C61F63.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\0,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\3"
+    },
+    {
+      "key": "A128770B-DDB5-9704-BF97-8702D4C61F63.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\0\\Issues.json,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\3\\Issues.json"
+    },
+    {
+      "key": "A128770B-DDB5-9704-BF97-8702D4C61F63.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\0\\Telemetry.json,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\3\\Telemetry.json"
+    },
+    {
+      "key": "AC49936E-C4EA-7915-9895-DA697393C9FB.sonar.projectKey",
+      "value": "AddressBookProject:AC49936E-C4EA-7915-9895-DA697393C9FB"
+    },
+    {
+      "key": "AC49936E-C4EA-7915-9895-DA697393C9FB.sonar.projectName",
+      "value": "AddressBookApp"
+    },
+    {
+      "key": "AC49936E-C4EA-7915-9895-DA697393C9FB.sonar.projectBaseDir",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookApp"
+    },
+    {
+      "key": "AC49936E-C4EA-7915-9895-DA697393C9FB.sonar.working.directory",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\.sonar\\mod1"
+    },
+    {
+      "key": "AC49936E-C4EA-7915-9895-DA697393C9FB.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "AC49936E-C4EA-7915-9895-DA697393C9FB.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "AC49936E-C4EA-7915-9895-DA697393C9FB.sonar.sources",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookApp\\obj\\AddressBookApp.csproj.nuget.dgspec.json,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookApp\\obj\\project.assets.json,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookApp\\bin\\Debug\\net10.0\\AddressBookApp.deps.json,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookApp\\bin\\Debug\\net10.0\\AddressBookApp.runtimeconfig.json,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBookApp\\AddressBookMain.cs"
+    },
+    {
+      "key": "AC49936E-C4EA-7915-9895-DA697393C9FB.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\1"
+    },
+    {
+      "key": "AC49936E-C4EA-7915-9895-DA697393C9FB.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\1\\Issues.json"
+    },
+    {
+      "key": "AC49936E-C4EA-7915-9895-DA697393C9FB.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\1\\Telemetry.json"
+    },
+    {
+      "key": "8952D532-9843-3FE0-CF88-C1333BB934CB.sonar.projectKey",
+      "value": "AddressBookProject:8952D532-9843-3FE0-CF88-C1333BB934CB"
+    },
+    {
+      "key": "8952D532-9843-3FE0-CF88-C1333BB934CB.sonar.projectName",
+      "value": "AddressBook.Tests"
+    },
+    {
+      "key": "8952D532-9843-3FE0-CF88-C1333BB934CB.sonar.projectBaseDir",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBook.Tests"
+    },
+    {
+      "key": "8952D532-9843-3FE0-CF88-C1333BB934CB.sonar.working.directory",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\.sonar\\mod2"
+    },
+    {
+      "key": "8952D532-9843-3FE0-CF88-C1333BB934CB.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "8952D532-9843-3FE0-CF88-C1333BB934CB.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "8952D532-9843-3FE0-CF88-C1333BB934CB.sonar.tests",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBook.Tests\\obj\\AddressBook.Tests.csproj.nuget.dgspec.json,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBook.Tests\\obj\\project.assets.json,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBook.Tests\\bin\\Debug\\net10.0\\AddressBook.Tests.deps.json,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBook.Tests\\bin\\Debug\\net10.0\\AddressBook.Tests.runtimeconfig.json,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBook.Tests\\AddressBookUtilityTests.cs,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\AddressBook.Tests\\ContactsUtilityTests.cs"
+    },
+    {
+      "key": "8952D532-9843-3FE0-CF88-C1333BB934CB.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\2,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\4"
+    },
+    {
+      "key": "8952D532-9843-3FE0-CF88-C1333BB934CB.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\2\\Issues.json,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\4\\Issues.json"
+    },
+    {
+      "key": "8952D532-9843-3FE0-CF88-C1333BB934CB.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\2\\Telemetry.json,C:\\Users\\yk444\\Videos\\BTECH\\.NET\\BridgeLabzTraining\\BridgeLabzTraining\\io-programming-csharp-practice\\scenario-based\\address-book\\.sonarqube\\out\\4\\Telemetry.json"
+    },
+    {
+      "key": "sonar.login",
+      "value": "***"
+    },
+    {
+      "key": "sonar.host.url",
+      "value": "http://localhost:9000"
+    },
+    {
+      "key": "sonar.visualstudio.enable",
+      "value": "false"
+    }
+  ]
+}
