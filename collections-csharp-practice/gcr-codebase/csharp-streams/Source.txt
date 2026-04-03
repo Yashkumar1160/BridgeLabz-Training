@@ -1,0 +1,6 @@
+File Handling - Read and Write a Text File 
+Problem Statement: Write a C# program that reads the contents of a text file and writes it into a new file. If the source file does not exist, display an appropriate message. 
+Requirements: Use FileStream for reading and writing. Handle IOException properly. Ensure that the destination file is created if it does not exist.
+Buffered Streams - Efficient File Copy 
+Problem Statement: Create a C# program that copies a large file (e.g., 100MB) from one location to another using Buffered Streams (BufferedStream). Compare the performance with normal file streams. 
+Requirements: Read and write in chunks of 4 KB (4096 bytes). Use Stopwatch to measure execution time. Compare execution time with unbuffered streams.
